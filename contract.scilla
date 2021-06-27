@@ -1,0 +1,55 @@
+(* PAT contract V0.1 *)
+
+(***************************************************)
+(*                 Scilla version                  *)
+(***************************************************)
+
+scilla_version 0
+
+(***************************************************)
+(*               Associated library                *)
+(***************************************************)
+library PAT
+
+let one  = Uint32 1
+let set_hello_code  = Uint32 2
+
+(***************************************************)
+(*             The contract definition             *)
+(***************************************************)
+
+contract PAT_V0_1
+
+(* Immutable contract parameters declaration *)
+(owner: ByStr20,
+serial_number: String,
+print_date: String,
+product: String,
+brand: String)
+
+
+(* Mutable contract parameters declaration *) 
+field exchange_count : Uint32 = Uint32 0 
+
+
+transition exchange ()
+  is_owner = builtin eq owner _sender;
+  match is_owner with
+  | False =>
+    (* invalid user, do nothing, maybe this throws an error that needs to be
+    handled? *)
+  | True =>
+    current_exchange_count <- exchange_count;
+    new_exchange_count = builtin add current_exchange_count one;
+    exchange_count := new_exchange_count;
+    e = {_eventname : "Exchange"; shoutout : "The Product has a new owner"; 
+    new_exchange_count: new_exchange_count};
+    event e
+  end
+end
+
+transition getExchanges ()
+  r <- exchange_count;
+  e = {_eventname: "Get Exchange count"; msg: r};
+  event e
+end
