@@ -26,7 +26,8 @@ function navigate() {
     window.location.href = 'results';  // redirect to results page when done!
 }
 
-fetch('deploy').then(navigate); // load the slow url then navigate
 
 
+ // deploy the contract while the loading screen goes then navigate to results page
+const data = fetch('deploy').then(navigate);
 loopThroughMessages(messages);

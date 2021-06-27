@@ -1,0 +1,17 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='/loading.css')}}">
+  </head>
+  
+<div class="container">
+    <div class="spinner">
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+    </div>
+  </div> 
+  <h3>
+    <p1 id="loading_txt">Starter</p1>
+  </h3>
+  <script src="{{url_for('static', filename='/loading.js')}}"></script>
+</html>

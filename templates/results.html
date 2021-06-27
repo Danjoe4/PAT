@@ -1,0 +1,22 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='/results.css')}}">
+  </head>
+
+<h1>
+    Display results here...
+</h1>
+<h3>
+    <ul>
+        {% for item in data %}
+            <li>{{item.serial}}</li>
+        {% endfor %}
+    </ul>
+        
+    <p1 id="serial">Failed to get results</p1>
+    <p2 id="brand">More results go here</p2>
+    <p3 id="product">and here</p3>
+    <p4 id="results">Plus I need to add formatting I really have my work cut out for me</p4>
+</h3>
+  <script src="{{url_for('static', filename='/results.js')}}"></script>
+</html>
