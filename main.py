@@ -48,7 +48,6 @@ def main():
     session['product'] = str(request.args.get('product'))
     session['brand'] = str(request.args.get('brand'))
 
-
     return serve_loading_page()
     # contract_address16 = deploy_contract(serial, product, brand)
 
@@ -66,7 +65,12 @@ def serve_loading_page():
 def serve_results_page():
     # pull saved values from the session
     print(session)
-    return session
+    tmp_str = "This page has no formatting yet but here are the values: \n" + \
+    session['brand'] + "\n"+ \
+    session['product'] + "\n"+ \
+    session['serial'] + "\n"+ \
+    "contract address in bech32 format, look it up on viewblock:   " + session['contract_address']
+    return tmp_str
 
     #return render_template('results.html', data=session)
 
@@ -86,7 +90,9 @@ def deploy_contract():
 
     # add the contract address
     session['contract_address'] = zilkey.to_bech32_address(contract.address)
-    return session # now the js file has the info it needs
+    
+    # fetch() requires that this function return a json, but 
+    return {} # we're using a server side session instead
 
 
 def set_init(serial, product, brand):
