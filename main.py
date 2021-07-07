@@ -11,6 +11,7 @@ from pyzil.contract import Contract
 from datetime import date
 import time as t
 import yaml
+import csv
 
 
 ############ useful globals; same for all users ################################3
@@ -21,8 +22,10 @@ with open("config.yaml") as f_stream:
 private_key = config_file["private_key"]
 account_address = config_file["account_address"]
 
+CURRENT_CHAIN = "testnet"
 chain.set_active_chain(chain.TestNet)
 account = Account(address = account_address, private_key = private_key)
+
 
 app = Flask(__name__, 
 static_folder='static',
@@ -44,15 +47,13 @@ def index():
 @app.route('/send')
 def main():
     # gather values from the POST request and save to the session
-    session['serial'] = str(request.args.get('serial'))
-    session['product'] = str(request.args.get('product'))
+    
     session['brand'] = str(request.args.get('brand'))
-
+    session['product'] = str(request.args.get('product'))
+    session['model'] = str(request.args.get('model'))
+    session['serial'] = str(request.args.get('serial'))
+        
     return serve_loading_page()
-    # contract_address16 = deploy_contract(serial, product, brand)
-
-    #return serial
-    #return f"success! Here is the contract location (bech16 address): {contract_address16}"
 
 
 def serve_loading_page():
@@ -65,18 +66,38 @@ def serve_loading_page():
 def serve_results_page():
     # pull saved values from the session
     print(session)
-    tmp_str = "This page has no formatting yet but here are the values: \n" + \
-    session['brand'] + "\n"+ \
-    session['product'] + "\n"+ \
-    session['serial'] + "\n"+ \
-    "contract address in bech32 format, look it up on viewblock:   " + session['contract_address']
-    return tmp_str
+    print(session['contract_address'])
+    data = {
+        'product_page' : get_product_page(),
+        'viewblock_page' : get_viewblock_page()
+    }
 
-    #return render_template('results.html', data=session)
+    return render_template('results.html', data=data)
+
+
+def get_product_page():
+    # open our database
+    csv_file = csv.reader(open('database.csv', "r"), delimiter=",")
+    url = None
+    for row in csv_file: #look for the model number
+        if session['model'] == row[1]:
+            url = row[2]
+    
+    if url is None: # fail safe
+        url = 'https://www.bose.com/en_us/index.html'
+
+    return url
+
+
+def get_viewblock_page():
+    # string format should be the same every time
+    addr = session['contract_address']
+    return f"https://viewblock.io/zilliqa/address/{addr}?network={CURRENT_CHAIN}&tab=state"
 
 
 @app.route("/deploy")
 def deploy_contract():
+
     # create the contract from file
     code = open("contract.scilla").read()
     contract = Contract.new_from_code(code)
@@ -85,10 +106,10 @@ def deploy_contract():
 
     # set custom initialization variables and deploy
     init = set_init(session['serial'], session['product'], session['brand'])
-    contract.deploy(init_params = init)
-    assert contract.status == Contract.Status.Deployed
+    contract.deploy(init_params = init, gas_price = 6000000000) #add gas price
+    assert contract.status == Contract.Status.Deployed #hmmmm this fails
 
-    # add the contract address
+    # add the contract address to the session
     session['contract_address'] = zilkey.to_bech32_address(contract.address)
     
     # fetch() requires that this function return a json, but 
@@ -111,5 +132,5 @@ def set_init(serial, product, brand):
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host='0.0.0.0')
+    app.run(debug=True)
     #deploy_contract("TESTV0_2", "Headphones", "BOSE")

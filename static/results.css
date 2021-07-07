@@ -1,4 +1,147 @@
-/* text color */
-h3 { 
-    color: black;
-  }
+html {
+  font-family: "Source Sans Pro", sans-serif;
+  line-height: 1.2em;
+}
+
+.sign_in {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*https://cryptologos.cc/logos/zilliqa-zil-logo.png maybe add this?*/
+  background-image: url();
+  background-size: cover;
+  background-position: center;
+}
+.sign_in .promo {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 0 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#242828+0,829191+100&0.65+0,0+100 */
+background: -moz-linear-gradient(left,  rgba(36,40,40,0.65) 0%, rgba(130,145,145,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  rgba(36,40,40,0.65) 0%,rgba(130,145,145,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  rgba(36,40,40,0.65) 0%,rgba(130,145,145,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', endColorstr='#00829191',GradientType=1 ); /* IE6-9 */
+
+}
+.sign_in .promo .title {
+  font-size: 4rem;
+  line-height: 5rem;
+  font-weight: 100;
+  color: #fff;
+  text-transform: capitalize;
+}
+.sign_in .promo .subtitle {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin: 20px 0;
+  font-weight: 100;
+}
+.sign_in .promo .buttons {
+  width: 100%;
+}
+.sign_in .promo .buttons button {
+  float: left;
+  margin-right: 10px;
+}
+.sign_in .form_container {
+  position: absolute;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 30vw;
+  min-width: 300px;
+  background-color: #fff;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.sign_in .form_container .heading {
+  text-align: center;
+  color: #7d3cd3;
+  font-size: 2.3rem;
+  line-height: 1.3em;
+  text-transform: capitalize;
+}
+.sign_in .form_container .description {
+  text-align: center;
+  color: #b0bec5;
+  font-size: 0.85rem;
+  line-height: 1.3em;
+  margin: 10px 0 30px;
+}
+.sign_in .form_container label {
+  color: #b0bec5;
+  font-size: 0.7;
+}
+.sign_in .form_container .copyright {
+  position: absolute;
+  color: #b0bec5;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.btn {
+  display: block;
+  box-sizing: border-box;
+  min-width: 200px;
+  padding: 0 2em;
+  text-align: center;
+  line-height: 40px;
+  height: 44px;
+  background-color: #fff;
+  border: 0;
+  text-transform: capitalize;
+  cursor: pointer;
+  color: #5921bd;
+  font-weight: 500;
+  border-radius: 3px;
+}
+.btn:hover {
+  transform: scale(1.02);
+}
+
+.btn_outline {
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+.btn_accent {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d3cd3+0,5921bd+100 */
+  background: #7d3cd3;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #7d3cd3 0%, #5921bd 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #7d3cd3 0%, #5921bd 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #7d3cd3 0%, #5921bd 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr="#7d3cd3", endColorstr="#5921bd",GradientType=0 );
+  /* IE6-9 */
+  color: #fff;
+}
+
+footer {
+  position: fixed;
+  margin-top: 2%;
+  height: 50 width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  bottom: 0;
+}
