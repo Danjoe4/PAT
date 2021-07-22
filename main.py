@@ -52,12 +52,14 @@ def main():
     encoded_value = request.args.get('v')
     
     params_list = unobscure(encoded_value)
+    print(params_list)
 
     # save these params to the session
     session['brand'] = str(params_list[0])
     session['product'] = str(params_list[1])
     session['model'] = str(params_list[2])
     session['serial'] = str(params_list[3])
+    print(session)
 
     return serve_loading_page()
 
@@ -113,8 +115,7 @@ def deploy_contract():
     contract.account = account # set the account
 
     # set custom initialization variables and deploy
-    init = set_init(session['serial'], session['product'], session['brand'])
-    contract.deploy(init_params = init, gas_price = 6000000000) #add gas price
+    contract.deploy(init_params = set_init(), gas_price = 6000000000) #add gas price
     assert contract.status == Contract.Status.Deployed #hmmmm this fails
 
     # add the contract address to the session
@@ -124,17 +125,18 @@ def deploy_contract():
     return {} # we're using a server side session instead
 
 
-def set_init(serial, product, brand):
+def set_init():
     today = date.today()
     d1 = today.strftime("%m/%d/%y")
 
     return [
-    Contract.value_dict("_scilla_version", "Uint32", "0"),
-    Contract.value_dict("serial_number", "String", serial),
+    Contract.value_dict("brand", "String", session['brand']),
+    Contract.value_dict("product", "String", session['product']),
+    Contract.value_dict("model", "String", session['model']),
+    Contract.value_dict("serial_number", "String", session['serial']),
     Contract.value_dict("owner", "ByStr20", account.address0x),
     Contract.value_dict("print_date", "String", d1),
-    Contract.value_dict("product", "String", product),
-    Contract.value_dict("brand", "String", brand)
+    Contract.value_dict("_scilla_version", "Uint32", "0")
     ]
 
 
@@ -143,12 +145,14 @@ def unobscure(obscured: bytes) -> list:
     to a regular string and splits into a list
     """
     # we need to chop off b'..' because .get() returns a string
-    out = zlib.decompress(urlsafe_b64decode(obscured[2:-1]))
-    return out.decode('utf-8').split(',')
+    out = zlib.decompress(urlsafe_b64decode(obscured))
+    out = out.decode('utf-8').split(',')
+    print(out)
+    return out
 
 
 if __name__ == "__main__":
-    #unobscure(b'eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO')
+    #unobscure(b'eNpL0UlJASIwTgEAHekEbQ==')
     app.run(debug=True)
     #deploy_contract("TESTV0_2", "Headphones", "BOSE")
     #unobscure(http://127.0.0.1:5000/send?v=b%27eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO%27")

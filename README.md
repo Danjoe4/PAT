@@ -20,3 +20,10 @@ V0_6 Final testing, add error handling.
 Post demo?
 -Refine the scilla contract to prevent duplicates from being made
 -maybe add a "resale" option such that users can transfer the nft
+
+########################################################
+Hosted at www.vaultqr.com (soon)
+
+USEAGE NOTES:
+Must generate the QR at http://danjoe4.pythonanywhere.com/
+Must used model 6DBL (this is the only valid model number that we have in our database)
