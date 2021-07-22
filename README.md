@@ -26,4 +26,6 @@ Hosted at www.vaultqr.com (soon)
 
 USEAGE NOTES:
 Must generate the QR at http://danjoe4.pythonanywhere.com/
-Must used model 6DBL (this is the only valid model number that we have in our database)
+If you use '6DBL' for model (without quotes) then you get a link to that product page,
+otherwise it sends you to the bose website because 6DBL is the only valid model number 
+that we have in our database
