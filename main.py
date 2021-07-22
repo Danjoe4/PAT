@@ -12,6 +12,8 @@ from datetime import date
 import time as t
 import yaml
 import csv
+import zlib
+from base64 import urlsafe_b64decode
 
 
 ############ useful globals; same for all users ################################3
@@ -41,19 +43,25 @@ Session(app)
 
 @app.route('/')
 def index():
-    return render_template("home.html")
+    render_template("home.html")
 
 
 @app.route('/send')
 def main():
     # gather values from the POST request and save to the session
+    encoded_value = request.args.get('v')
     
-    session['brand'] = str(request.args.get('brand'))
-    session['product'] = str(request.args.get('product'))
-    session['model'] = str(request.args.get('model'))
-    session['serial'] = str(request.args.get('serial'))
-        
+    params_list = unobscure(encoded_value)
+
+    # save these params to the session
+    session['brand'] = str(params_list[0])
+    session['product'] = str(params_list[1])
+    session['model'] = str(params_list[2])
+    session['serial'] = str(params_list[3])
+
     return serve_loading_page()
+
+
 
 
 def serve_loading_page():
@@ -130,7 +138,17 @@ def set_init(serial, product, brand):
     ]
 
 
+def unobscure(obscured: bytes) -> list:
+    """ For testing, decodes from base64, decompresses, then decodes back 
+    to a regular string and splits into a list
+    """
+    # we need to chop off b'..' because .get() returns a string
+    out = zlib.decompress(urlsafe_b64decode(obscured[2:-1]))
+    return out.decode('utf-8').split(',')
+
 
 if __name__ == "__main__":
+    #unobscure(b'eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO')
     app.run(debug=True)
     #deploy_contract("TESTV0_2", "Headphones", "BOSE")
+    #unobscure(http://127.0.0.1:5000/send?v=b%27eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO%27")
