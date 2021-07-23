@@ -25,8 +25,8 @@ contract PAT_V0_1
 product: String,
 model: String,
 serial: String,
-owner: ByStr20,
-print_date: String
+print_date: String,
+owner: ByStr20
 )
 
 

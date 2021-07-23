@@ -50,7 +50,8 @@ def index():
 def main():
     # gather values from the POST request and save to the session
     encoded_value = request.args.get('v')
-    
+    print(encoded_value)
+
     params_list = unobscure(encoded_value)
     print(params_list)
 
