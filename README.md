@@ -24,10 +24,13 @@ Post demo?
 ########################################################
 USEAGE NOTES AND CONSTRAINTS:
 -Hosted at djbroderick.xyz (soon to be at www.vaultqr.com)
+
 -Must generate the QR at http://danjoe4.pythonanywhere.com/
+
 -If you use '6DBL' for model (without quotes) then you get a link to that product page,
 otherwise it just sends you to the bose website. This is because 6DBL is the only valid model number 
 that we have in our database
+
 -You must make the contract unique in some way. If you generate a contract that is exactly the same,
 the Ziliqa blockchain will NOT create a duplicate by default (it does provide the address to the previously
 made contract, however). This is extremely useful and we can use this to our advantage in the future. 
