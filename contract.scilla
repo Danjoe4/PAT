@@ -21,11 +21,13 @@ let set_hello_code  = Uint32 2
 contract PAT_V0_1
 
 (* Immutable contract parameters declaration *)
-(owner: ByStr20,
-serial_number: String,
-print_date: String,
+(brand: String,
 product: String,
-brand: String)
+model: String,
+serial: String,
+owner: ByStr20,
+print_date: String
+)
 
 
 (* Mutable contract parameters declaration *) 

@@ -43,7 +43,7 @@ Session(app)
 
 @app.route('/')
 def index():
-    render_template("home.html")
+    return render_template("home.html")
 
 
 @app.route('/send')
@@ -133,7 +133,7 @@ def set_init():
     Contract.value_dict("brand", "String", session['brand']),
     Contract.value_dict("product", "String", session['product']),
     Contract.value_dict("model", "String", session['model']),
-    Contract.value_dict("serial_number", "String", session['serial']),
+    Contract.value_dict("serial", "String", session['serial']),
     Contract.value_dict("owner", "ByStr20", account.address0x),
     Contract.value_dict("print_date", "String", d1),
     Contract.value_dict("_scilla_version", "Uint32", "0")
