@@ -16,7 +16,7 @@ import zlib
 from base64 import urlsafe_b64decode
 
 
-############ useful globals; same for all users ###############################
+############ useful globals; same for all users ##############################
 # load our yaml file with all our secrets
 with open("config.yaml") as f_stream:
     config_file = yaml.load(f_stream, yaml.FullLoader)
