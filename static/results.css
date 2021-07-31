@@ -138,12 +138,3 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', e
   /* IE6-9 */
   color: #fff;
 }
-
-footer {
-  position: fixed;
-  margin-top: 2%;
-  height: 50 width: 100%;
-  text-align: center;
-  font-size: 0.8em;
-  bottom: 0;
-}
