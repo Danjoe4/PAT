@@ -14,7 +14,7 @@ function loopThroughMessages(messages) {
         // and make a pause after it
         (function (i) {
             setTimeout(function () {
-                document.getElementById('loading_txt').innerHTML = messages[i];
+                document.getElementById('loading').innerHTML = messages[i];
                 console.log(messages[i]);
             }, 5000 * i);
         })(i);

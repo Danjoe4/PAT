@@ -43,7 +43,9 @@ Session(app)
 
 @app.route('/')
 def index():
-    return render_template("home.html")
+    # root page, this is good for testing
+    return render_template("loading.html")
+    #return render_template("home.html")
 
 
 @app.route('/send')
