@@ -1,7 +1,13 @@
 html {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Eurostile", sans-serif;
   line-height: 1.2em;
 }
+
+@font-face {  
+  font-family: "Eurostile";  
+  src: url(fonts/EurostileLTStd.eot); /* IE */  
+  src: local("Eurostile"), url(fonts/EurostileLTStd.otf) format("opentype"); /* non-IE */  
+} 
 
 .sign_in {
   position: fixed;
@@ -46,6 +52,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', e
   line-height: 1.5rem;
   margin: 20px 0;
   font-weight: 300;
+  text-align: center;
   
 }
 .sign_in .promo .buttons {
@@ -120,9 +127,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', e
 }
 
 .btn_outline {
-  color: #fff;
+  color: rgb(0, 0, 0);
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid rgb(0, 0, 0);
 }
 .btn_accent {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d3cd3+0,5921bd+100 */
