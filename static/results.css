@@ -34,18 +34,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', e
 
 }
 .sign_in .promo .title {
-  font-size: 4rem;
-  line-height: 5rem;
-  font-weight: 100;
-  color: #fff;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
   text-transform: capitalize;
 }
 .sign_in .promo .subtitle {
-  color: rgba(255, 255, 255, 0.5);
+  color: (41,145,151);
   font-size: 1rem;
   line-height: 1.5rem;
   margin: 20px 0;
-  font-weight: 100;
+  font-weight: 300;
+  
 }
 .sign_in .promo .buttons {
   width: 100%;
@@ -109,9 +110,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6242828', e
   border: 0;
   text-transform: capitalize;
   cursor: pointer;
-  color: #5921bd;
+  color: #000000;
   font-weight: 500;
   border-radius: 3px;
+  margin-bottom: 2px;
 }
 .btn:hover {
   transform: scale(1.02);
