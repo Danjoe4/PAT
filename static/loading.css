@@ -21,9 +21,26 @@
   }
   
   /* text color */
-  p1 { 
+  .loading {
+    position: absolute;
     color: white;
+    text-align: center;
+    left: calc(50% - 115px);
+    right: calc(50% - 115px);
+    white-space: nowrap;
+    padding: 10px;
+    margin: auto;
+    /* Hacky solution that needs to be fixed,
+    border: 3px solid #73AD21;*/
+
   }
+
+  html {
+    font-family: "Source Sans Pro", sans-serif;
+    line-height: 3em;
+    font-size: 1.2em;
+  }
+
   
   
   .spinner {

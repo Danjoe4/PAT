@@ -1,6 +1,6 @@
 var messages = ["Crawling the Blockchain",
   "Finding a Node",
-  "Writing the Smart Contract",
+  "Minting Smart Contract",
   "Creating a New Block",
   "Making the Transaction",
   "Distributing Accross Chain",
@@ -14,7 +14,7 @@ function loopThroughMessages(messages) {
         // and make a pause after it
         (function (i) {
             setTimeout(function () {
-                document.getElementById('loading_txt').innerHTML = messages[i];
+                document.getElementById('loading').innerHTML = messages[i];
                 console.log(messages[i]);
             }, 5000 * i);
         })(i);
