@@ -1,16 +1,17 @@
-
+<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 
-<link rel="stylesheet" href="{{ url_for('static', filename='/results.css')}}">
-<script src="{{url_for('static', filename='/results.js')}}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='/already_scanned.css')}}">
+<script src="{{url_for('static', filename='/already_scanned.js')}}"></script>
 
 <div class="sign_in">
   <div class="promo">
-    <h1 class="title">Your Product Has been Authenticated.</h1>
-    <div class="subtitle"> Being confident in your purchases has never been easier.<br> 
+    <h1 class="title">This QR code has already been scanned.</h1>
+    <div class="subtitle"> Please confirm that the product was bought from a verified retailor.
+        <br> 
       <p></p>
-      Check out the product page or see the digital version of your item!  </div>
+      View the product and see when it was generated previously!  </div>
     <div class="buttons">
        <button id="product_page" class="btn">Company Product Page</button>
       <button id="viewblock_page" class="btn btn_outline">Blockchain Record</button>

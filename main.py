@@ -1,6 +1,5 @@
-from flask import Flask, request, render_template, session
-from flask_session import Session
-
+from flask import Flask, request, render_template, session, jsonify
+from flask_session import Session 
 
 from pyzil.crypto import zilkey
 from pyzil.zilliqa import chain
@@ -8,8 +7,7 @@ from pyzil.zilliqa.units import Zil, Qa
 from pyzil.account import Account, BatchTransfer
 from pyzil.contract import Contract
 
-from datetime import date
-import time as t
+import datetime
 import yaml
 import csv
 import zlib
@@ -33,9 +31,11 @@ app = Flask(__name__,
 static_folder='static',
 template_folder='templates')
 
-# for the session, i.e passing values 
+# for the session, i.e passing values
+app.secret_key = config_file["flask_session_key"]
 app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
+app.config["PERMANENT_SESSION_LIFETIME"] = 60 # the session lasts 60 seconds
 app.config.from_object(__name__)
 Session(app)
 
@@ -44,16 +44,29 @@ Session(app)
 @app.route('/')
 def index():
     # root page, this is good for testing
-    return render_template("loading.html")
-    #return render_template("home.html")
+    #return render_template("loading.html")
+    return render_template("home.html")
 
 
 @app.route('/send')
 def main():
     # gather values from the POST request and save to the session
     encoded_value = request.args.get('v')
+    print("initial val:")
     print(encoded_value)
 
+    # check if the QR has been scanned already
+    existing_urls = check_for_dup(encoded_value)
+    print("the existing urls:")
+    print(existing_urls)
+    if existing_urls is not False:
+        data={"product_page": existing_urls[0],
+        "viewblock_page": existing_urls[1],
+        }
+        return render_template("already_scanned.html", data=data)
+    # otherwise we proceed to generate the NFT as normal and add the entry when finished (see results fnc)
+    session['encoded_value'] = encoded_value
+   
     params_list = unobscure(encoded_value)
     print(params_list)
 
@@ -62,7 +75,7 @@ def main():
     session['product'] = str(params_list[1])
     session['model'] = str(params_list[2])
     session['serial'] = str(params_list[3])
-    print(session)
+    #print(session)
 
     return serve_loading_page()
 
@@ -78,12 +91,17 @@ def serve_loading_page():
 @app.route("/results")
 def serve_results_page():
     # pull saved values from the session
+    print("check these values")
     print(session)
-    print(session['contract_address'])
+    product_page = get_product_page()
+    viewblock_page = get_viewblock_page(session['contract_address'])
     data = {
-        'product_page' : get_product_page(),
-        'viewblock_page' : get_viewblock_page()
+        'product_page' : product_page,
+        'viewblock_page' : viewblock_page
     }
+
+    #temp duplication solution
+    add_entry(session['encoded_value'], product_page, viewblock_page)
 
     return render_template('results.html', data=data)
 
@@ -102,9 +120,8 @@ def get_product_page():
     return url
 
 
-def get_viewblock_page():
+def get_viewblock_page(addr):
     # string format should be the same every time
-    addr = session['contract_address']
     return f"https://viewblock.io/zilliqa/address/{addr}?network={CURRENT_CHAIN}&tab=state"
 
 
@@ -123,22 +140,21 @@ def deploy_contract():
 
     # add the contract address to the session
     session['contract_address'] = zilkey.to_bech32_address(contract.address)
-    
+
+    print(session)
+
     # fetch() requires that this function return a json, but 
     return {} # we're using a server side session instead
 
 
 def set_init():
-    today = date.today()
-    d1 = today.strftime("%m/%d/%y")
-
     return [
     Contract.value_dict("brand", "String", session['brand']),
     Contract.value_dict("product", "String", session['product']),
     Contract.value_dict("model", "String", session['model']),
     Contract.value_dict("serial", "String", session['serial']),
+    Contract.value_dict("print_date", "String", init_date_str()),
     Contract.value_dict("owner", "ByStr20", account.address0x),
-    Contract.value_dict("print_date", "String", d1),
     Contract.value_dict("_scilla_version", "Uint32", "0")
     ]
 
@@ -154,8 +170,38 @@ def unobscure(obscured: bytes) -> list:
     return out
 
 
+def check_for_dup(encoded_value):
+    """ Returns [product_page, viewblock_page] if the database contains the same encoded string
+    """
+    # open our database
+    with open('dup_checker.csv') as csv_file:
+        csv_reader = csv.reader(csv_file, delimiter=',')
+        for row in csv_reader: #look for the value
+            print(row)
+            if encoded_value == row[0]:
+                return [row[1], row[2]]
+    
+    return False
+
+
+
+def add_entry(enc_val, product_url, viewblock_url):
+    with open("dup_checker.csv", 'a+', newline='') as write_obj:
+        # Create a writer object from csv module
+        csv_writer = csv.writer(write_obj)
+        # Add contents of list as last row in the csv file
+        csv_writer.writerow([enc_val, product_url, viewblock_url])
+
+
+def init_date_str():
+    today = datetime.datetime.now()
+    d1 = today.strftime("%b %d %Y %H:%M:%S")
+    return d1
+
+
 if __name__ == "__main__":
     #unobscure(b'eNpL0UlJASIwTgEAHekEbQ==')
-    app.run(debug=True)
+    #app.run(debug=True)
     #deploy_contract("TESTV0_2", "Headphones", "BOSE")
     #unobscure(http://127.0.0.1:5000/send?v=b%27eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO%27")
+    print(init_date_str())
