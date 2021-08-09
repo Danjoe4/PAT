@@ -24,10 +24,16 @@ function loopThroughMessages(messages) {
 
 function navigate() {
     window.location.href = 'results';  // redirect to results page when done!
+    
 }
 
 
 
  // deploy the contract while the loading screen goes then navigate to results page
-const data = fetch('deploy').then(navigate);
+const data = fetch('deploy', {
+    method: 'GET',
+    credentials: 'include'
+  }).then(navigate);
+  
+
 loopThroughMessages(messages);
