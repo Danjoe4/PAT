@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+  <head>
+    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='/duplicate_loading.css')}}">
+    
+  </head>
+
+
+<div class="container">
+    <!--The spinner-->
+    <div class="spinner">
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+      <div class="spinner-item"></div>
+    </div>
+    <!--the text below the spinner-->
+    <div class="loading">
+      <p1 id="loading">Starting</p1>
+    </div>
+  </div>
+  
+  <script src="{{url_for('static', filename='/duplicate_loading.js')}}"></script>
+</html>
