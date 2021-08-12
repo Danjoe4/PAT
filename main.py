@@ -7,12 +7,13 @@ from pyzil.zilliqa.units import Zil, Qa
 from pyzil.account import Account, BatchTransfer
 from pyzil.contract import Contract
 
+import time
 import datetime
 import yaml
 import csv
 import zlib
 from base64 import urlsafe_b64decode
-
+import binascii
 
 ############ useful globals; same for all users ###########################
 # load our yaml file with all our secrets
@@ -43,14 +44,19 @@ Session(app)
 
 @app.route('/')
 def index():
-    # root page, this is good for testing
+    """ root page, this is good for testing, although we should eventually turn it
+    into an about page or something
+    """
     #return render_template("loading.html")
     return render_template("home.html")
+    #return render_template("duplicate_loading.html")
 
 
 @app.route('/send')
 def main():
-    # gather values from the POST request and save to the session
+    """ Called when the QR code is scanned. Gathers values from the POST request 
+    and decides what to do with them
+    """
     encoded_value = request.args.get('v')
     print("initial val:")
     print(encoded_value)
@@ -60,13 +66,76 @@ def main():
     print("the existing urls:")
     print(existing_urls)
     if existing_urls is not False:
-        data={"product_page": existing_urls[0],
-        "viewblock_page": existing_urls[1],
+        session["product_page"] = existing_urls[0]
+        session["viewblock_page"] = existing_urls[1]
+        return render_template("duplicate_loading.html")
+
+    # otherwise proceed to generate the NFT as normal
+    try: # catches error caused by the user modifying the url string
+        save_product_parameters_to_session(encoded_value)
+    except (binascii.Error, zlib.error) as err: 
+        return render_template("error.html")
+
+    return serve_loading_page()
+
+
+@app.route('/duplicate')
+def serve_duplicate_page():
+    data={"product_page":  session["product_page"],
+        "viewblock_page": session["viewblock_page"]
         }
-        return render_template("already_scanned.html", data=data)
-    # otherwise we proceed to generate the NFT as normal and add the entry when finished (see results fnc)
+    return render_template("already_scanned.html", data=data)
+
+
+@app.route("/deploy")
+def deploy_contract():
+    """ Uses pyzil to deploy the contract
+    """
+    # create the contract from file
+    code = open("contract.scilla").read()
+    contract = Contract.new_from_code(code)
+    contract.account = account # set the account
+
+    # set custom initialization variables and deploy
+    contract.deploy(init_params = set_init(), gas_price = 6000000000) #add gas price
+    assert contract.status == Contract.Status.Deployed #hmmmm this fails
+
+    # add the contract address to the session
+    session['contract_address'] = zilkey.to_bech32_address(contract.address)
+    print(session)
+
+    # fetch() requires that this function return a json, but 
+    return {} # we're using a server side session instead
+
+
+@app.route("/results")
+def serve_results_page():
+    # pull saved values from the session
+    print("/results session values: ")
+    print(session)
+    product_page = get_product_page()
+    viewblock_page = get_viewblock_page(session['contract_address'])
+
+    #temp duplication solution
+    add_entry(session['encoded_value'], product_page, viewblock_page)
+
+    return render_template('results.html', data={
+        'product_page' : product_page,
+        'viewblock_page' : viewblock_page
+    })
+
+
+@app.route("/deploying")
+def return_cookie():
+    """ This is only to return a cookie to the fetch in duplicate_loading.js
+    """
+    return {}
+
+
+
+
+def save_product_parameters_to_session(encoded_value):
     session['encoded_value'] = encoded_value
-   
     params_list = unobscure(encoded_value)
     print(params_list)
 
@@ -77,8 +146,6 @@ def main():
     session['serial'] = str(params_list[3])
     #print(session)
 
-    return serve_loading_page()
-
 
 
 
@@ -86,24 +153,6 @@ def serve_loading_page():
     # this template fetches deploy_contract() while displaying a loading screen,
     # then redirects to the results page
     return render_template('loading.html')
-
-
-@app.route("/results")
-def serve_results_page():
-    # pull saved values from the session
-    print("check these values")
-    print(session)
-    product_page = get_product_page()
-    viewblock_page = get_viewblock_page(session['contract_address'])
-    data = {
-        'product_page' : product_page,
-        'viewblock_page' : viewblock_page
-    }
-
-    #temp duplication solution
-    add_entry(session['encoded_value'], product_page, viewblock_page)
-
-    return render_template('results.html', data=data)
 
 
 def get_product_page():
@@ -125,26 +174,6 @@ def get_viewblock_page(addr):
     return f"https://viewblock.io/zilliqa/address/{addr}?network={CURRENT_CHAIN}&tab=state"
 
 
-@app.route("/deploy")
-def deploy_contract():
-
-    # create the contract from file
-    code = open("contract.scilla").read()
-    contract = Contract.new_from_code(code)
-
-    contract.account = account # set the account
-
-    # set custom initialization variables and deploy
-    contract.deploy(init_params = set_init(), gas_price = 6000000000) #add gas price
-    assert contract.status == Contract.Status.Deployed #hmmmm this fails
-
-    # add the contract address to the session
-    session['contract_address'] = zilkey.to_bech32_address(contract.address)
-
-    print(session)
-
-    # fetch() requires that this function return a json, but 
-    return {} # we're using a server side session instead
 
 
 def set_init():
@@ -164,6 +193,7 @@ def unobscure(obscured: bytes) -> list:
     to a regular string and splits into a list
     """
     # we need to chop off b'..' because .get() returns a string
+
     out = zlib.decompress(urlsafe_b64decode(obscured))
     out = out.decode('utf-8').split(',')
     print(out)
@@ -194,14 +224,14 @@ def add_entry(enc_val, product_url, viewblock_url):
 
 
 def init_date_str():
-    today = datetime.datetime.now()
+    today = datetime.datetime.utcnow()
     d1 = today.strftime("%b %d %Y %H:%M:%S")
     return d1
 
 
 if __name__ == "__main__":
     #unobscure(b'eNpL0UlJASIwTgEAHekEbQ==')
-    #app.run(debug=True)
+    app.run(debug=True)
     #deploy_contract("TESTV0_2", "Headphones", "BOSE")
     #unobscure(http://127.0.0.1:5000/send?v=b%27eNqLdsovTtXxcHV0CfDw93MN1jFzcfLRCfb3dQ12DfJ09DEyMTI2NTOPBQDvFwsO%27")
-    print(init_date_str())
+    #print(init_date_str())
