@@ -48,11 +48,7 @@ def index():
     into an about page or something
     """
     #return render_template("loading.html")
-<<<<<<< HEAD
     return render_template("home.html")
-=======
-    #return render_template("home.html")
->>>>>>> f6b819f16c0faff256f7e191e04c4f65cad0b2c4
     #return render_template("duplicate_loading.html")
 
 
