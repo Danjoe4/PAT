@@ -48,8 +48,9 @@ def index():
     into an about page or something
     """
     #return render_template("loading.html")
-    return render_template("home.html")
+    #return render_template("home.html")
     #return render_template("duplicate_loading.html")
+    return serve_about_page()
 
 
 @app.route('/send')
@@ -131,6 +132,10 @@ def return_cookie():
     """
     return {}
 
+
+@app.route("/about")
+def serve_about_page():
+    return render_template("about.html")
 
 
 
