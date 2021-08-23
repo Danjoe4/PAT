@@ -35,6 +35,7 @@ header{
 
 .navigation li {
     display: inline-block;
+    padding-top: 40px;
     padding-left: 20px;
     padding-right: 50px;
 }
@@ -49,12 +50,12 @@ header{
     color: #29ccc4;
     
 }
-
+/* si */
 /* Mantain Color on Current Tab */
 .navigation li a.active {
     color: #29ccc4;
     border-bottom: solid 3px #29ccc4;
-    padding-bottom: 62px;       /* Space Between  line and Word */
+    padding-bottom: 19px;       /* Space Between  line and Word */
 }
 
 .wrapper{
