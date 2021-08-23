@@ -1,12 +1,28 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<html lang="en">
-
+<html>
     <head>
-        <link rel="stylesheet" media="all" href="{{ url_for('static', filename='/about.css')}}">
-        
-      </head>
-
-<h1> 
-    about us
-</h1>
+        <!-- Character Encoding -->
+        <meta charset="utf-8">
+        <!-- Responsive meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test1</title>    <!-- Change Title later... -->
+        <!-- Import about Style CSS -->
+        <link rel="stylesheet" href="../static/about.css">
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="../Images/logo.jpg" style="width:150px;height:150px;" alt="Logo">
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about" class="active">About</a></li>
+                    <li><a href="#">Link3</a></li>
+                    <li><a href="#">Link4</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <img class="main_image" src="../Images/temp_image.jpg" style="width:600px;height:400px;" alt="Large_Image">
+        </div>
+    </body>
+</html>
