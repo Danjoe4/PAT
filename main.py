@@ -114,7 +114,7 @@ def serve_results_page():
     # pull saved values from the session
     print("/results session values: ")
     print(session)
-    product_page = get_product_page()
+    product_page = get_product_page(session['model'])
     viewblock_page = get_viewblock_page(session['contract_address'])
 
     #temp duplication solution
@@ -160,12 +160,12 @@ def serve_loading_page():
     return render_template('loading.html')
 
 
-def get_product_page():
+def get_product_page(model):
     # open our database
     csv_file = csv.reader(open('database.csv', "r"), delimiter=",")
     url = None
     for row in csv_file: #look for the model number
-        if session['model'] == row[1]:
+        if model == row[1]:
             url = row[2]
     
     if url is None: # fail safe
