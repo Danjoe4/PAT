@@ -1,2 +1,376 @@
-serial,model,url
-0,6DBL,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-wireless.html
+﻿name,model,url
+SoundWear Companion speaker,789470,https://www.bose.com/en_us/support/products/bose_wearables_support/soundwear-companion.html
+Bose Frames Alto,829195,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wearables_speakers_support/bose-frames-alto.html
+Bose Frames Rondo,829194,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wearables_speakers_support/bose-frames-rondo.html
+Bose Frames Soprano,856771,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wearables_speakers_support/bose-frames-soprano.html
+Bose Frames Tempo: ,856768,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wearables_speakers_support/bose-frames-tempo.html
+Bose Frames Tenor: ,856771,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wearables_speakers_support/bose-frames-tenor.html
+SoundTouch 300 soundbar: ,788924,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundtouch-300-soundbar.html
+Solo TV SoundSystem: ,410376,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/solo_tv_sound_system.html
+Solo 10 Series 2 TV Sound System,754063,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/solo_10_series_ii.html#v=solo_10_series_ii_black
+Solo 10 TV Sound System,717643,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/solo_10.html#v=solo_10_black
+Solo 15 Series 2 TV Sound System,754063,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-solo-15-tv-sound-system.html
+Solo 15 TV Sound System,717643,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/solo_15.html#v=solo_15_black
+CineMate 120 home theater system,715107,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate-120-home-theater-system.html#v=cinemate_120_black
+CineMate 10 home theater system,715326,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate_10.html#v=cinemate_10_black
+Lifestyle 135 System 2,372639,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/lifestyle_135_series_ii.html
+Lifestyle 135 Home Entertainment System,348139,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/ls135.html
+Lifestyle SoundTouch 135 entertainment System,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/lifestyle-soundtouch-135-entertainment-system.html#v=ls_soundtouch_135_black
+VCS-10 center speaker,257528,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/vcs10.html#v=vcs10_black
+VCS-30 Series 2 Center/Surround Speaker System,257528,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/vcs30_series2.html
+VCS-30 Series 1 Center/Surround Speaker System,027029,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/vcs30_series2.html
+V-300 Home Theater Speaker,184207,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/v300.html#v=v300_black
+V-100 Video Speaker,184207,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/v100.html#v=v100_black
+VS-100 Video Speaker System,147195,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/vs100.html#v=vs100_black
+SoundTouch Soundbar System,796256,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-soundbar-system.html#v=soundtouch_300_special_black
+CineMate 15 Home Theater Speaker System,715326,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate-15-home-theater-speaker-system.html#v=cinemate_15_black
+Lifestyle 135 Series 3 Home Entertainment System,740968,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/ls135_iii.html
+CineMate 130 Home Theater System,735964,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate-130-home-theater-system.html#v=cinemate_130_black
+SoundTouch 120 Home Theater System,740967,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-120-home-theater-system.html#v=soundtouch_120_black
+SoundTouch 130 Home Theater System,759890,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-130-home-theater-system.html
+CineMate 1 SR home Theater Speaker System,342773,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate_1sr.html#v=Cinemate_1_Sr_Blk_Ap
+Solo 5 TV Sound System,798493,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-solo-5-tv-sound-system.html#v=solo_5_black
+Soundbar 500,810604,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundbar-500.html#v=bose_soundbar_500_black
+Smart Soundbar 700,810651,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundbar-700.html#v=bose_soundbar_700_black
+Soundbar System Bundle,829292,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundbar-500-system-pkg.html#v=bose_soundbar_500_system_pkg_black
+Videobar VB1,868554,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-videobar-vb1.html#v=bose_videobar_vb1_black
+TV Speaker,852004,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-tv-speaker.html#v=bose_tv_speaker_black
+Smart Soundbar 300,858459,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-smart-soundbar-300.html#v=bose_smart_soundbar_300_black
+Solo Soundbar,850858,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-solo-soundbar-ii.html#v=bose_solo_soundbar_ii_black
+Smart Soundbar System,858459,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-smart-soundbar-system.html#v=bose_smart_soundbar_system_black
+CineMate GS Series 2 Digital Home Theater Speaker System,323023,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/cinemate_gs_series2.html
+321 GSX Series 3 DVD Home Entertainment System,312518,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gsx_series3.html#v=321gsx_series3_black
+321 GS Series 3 DVD Home Entertainment System,312515,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gs_series3.html#v=321gs_series3_graphite
+321 Series 3 system,312515,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321_series3.html#v=321_series3_graphite
+321 GS Series 2 DVD Home Entertainment System,289769,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gs_series2.html#v=321gs_series2_graphite
+321 Series 2 DVD Home Entertainment System,289769,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321_series2.html#v=321_series2_graphite
+321 GSX DVD Home Entertainment System,282434,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gsx_series1.html#v=321gsx_series1_graphite
+321 GS Home Entertainment System,271966,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gs_series1.html#v=321_gs_dvd_he_sys_grpht_r2_230v
+321 Home Entertainment System,271966,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/321gs_series1.html#v=321_gs_dvd_he_sys_grpht_r2_230v
+Acoustimass 5 Series 5 Stereo Speaker System,719714,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/acoustimass-5-speaker-system.html
+Acoustimass 5 Series 3 Speaker System,196451,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am5_series3.html
+Acoustimass 5 Series 2 Speaker System,142218,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am5_series2.html
+Acoustimass 5 Speaker System,133314,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am5_series1.html#v=am5_series1_black
+Acoustimass 7 Home Theater Speakers,187564,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am7.html#v=am7_black
+Acoustimass 3 Series 5 Stereo Speaker System,719704,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/acoustimass-3-speaker-system.html
+Acoustimass 3 Series 4 Speaker System,252171,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am3_series4.html
+Acoustimass 3 Series 3 Speaker System,172825,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am3_series3.html
+Acoustimass 3 Series 2 Speaker System,142093,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am3_series2.html
+Powered Acoustimass 3 Series 2 Speaker System,183202,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am3powered_series2.html
+Lifestyle 5 Series 3 Music System,251774,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls5_series3.html
+Lifestyle 5 Series 2 Music System,191413,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls5_series2.html
+Lifestyle 5 Music System,172340,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls5_series1.html#v=ls5_series1_black
+Lifestyle 3 Series 2 Music System,191417,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls3_series2.html
+Lifestyle 30,199736,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls30_series2.html
+Lifestyle 40 Music System,189858,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls40.html
+Lifestyle 20 Music System,178934,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls20.html
+Lifestyle 10 Music System,142148,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls10.html
+Lifestyle 235 Home Entertainment System,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls_235.html#v=ls_235_black
+AM-500 Acoustimass Speakers,177201,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am500.html
+Acoustimass SE-5 Series 2 Direct/Reflecting Speaker System,172003,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am_se5_series2.html
+Acoustimass SE-5 Speaker System,134969,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am_se5_series1.html
+Freestyle Speaker System,267190,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/freestyle_system.html#v=freestyle_system_black
+Powered Acoustimass 5 Series 2 Speaker System,142218,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am5_series2.html
+VCS-300 Home Theater Upgrade Package,197894,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/vcs300.html#v=vcs300_black
+Acoustimass Bass System,137483,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/am_bass.html
+CineMate 220 Home Cinema System,735964,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/cinemate_220.html
+SoundTouch 220 Home Theater System,740967,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/soundtouch-220-home-theater-system.html
+Lifestyle 235 System 3,740968,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/lifestyle_235_series_iii.html
+CineMate Digital Home theater Speaker System,289245,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/cinemate.html
+CineMate Series 2 Digital Home Theater Speaker System,323023,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/cinemate_series2.html
+Lifestyle 901 Music System,176226,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls901.html
+Lifestyle 235 System 2,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/ls_235.html
+Lifestyle 650 Home Entertainment System,799905,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-650-home-theater-system.html
+Lifestyle 600 Home Entertainment System,799911,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-600-home-theater-system.html
+Lifestyle V25 Home Entertainment System,348139,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lsv25.html
+Lifestyle V30 Home Entertainment System,316799,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lsv30.html
+Lifestyle V20 Home Theater System,316799,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lsv20.html
+Lifestyle T20 Home Theater System,348130,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lst20.html
+Lifestyle V10 Home Theater System,316799,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lsv10.html
+Lifestyle T10 Home Theater System,348139,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lst10.html
+Lifestyle 48 Series 4 DVD Home Entertainment System,314478,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls48_series4.html
+Lifestyle 48 Series 3 DVD Home Entertainment System,294789,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls48_series3.html#v=ls48_series3_black
+Lifestyle 48 DVD Home Entertainment System,274482,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls48_series1.html
+Lifestyle 535 Series 3 Home Entertainment System,720422,https://www.bose.com.au/en_au/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-535-series-iii-home-entertainment-system.html
+Lifestyle SoundTouch 535 Entertainment System,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-soundtouch-535-entertainment-system.html
+Lifestyle 525 Series 3 Home Entertainment System,372633,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-525-series-iii-home-entertainment-system.html
+Lifestyle 525 Series 2 Home Entertainment System,735964,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls525_ii.html
+Lifestyle Soundtouch 525 Entertainment System,740958,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-soundtouch-525-entertainment-system.html
+Lifestyle 38 Series 4 DVD Home Entertainment System,314478,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls38_series4.html
+Lifestyle 38 Series 3 DVD Home Entertainment System,289327,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls38_series3.html
+Lifestyle 38 DVD Home Entertainment System,274398,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls38_series1.html
+Lifestyle 35 Series 4 DVD Home Entertainment System,305449,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls35_series4.html
+Lifestyle 35 Series 3 DVD Home Entertainment System,289324,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls35_series3.html
+Lifestyle 28 Series 3 DVD Home Entertainment System,289324,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls28_series3.html
+Lifestyle 28 Series 2 System,286874,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls28_series2.html#v=ls28_series2_black
+Lifestyle 28 DVD Home Entertainment System,259777,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls28_series1.html#v=ls28_series1_black
+Lifestyle 18 Series 3 DVD Home Entertainment System,289324,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls18_series3.html#v=ls18_series3_black
+Lifestyle 18 Series 2 DVD Home Entertainment System,274398,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls18_series2.html#v=ls18_series2_black
+Lifestyle 18 DVD Home Entertainment System,269711,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls18_series1.html#v=ls18_series1_black
+Lifestyle 50 System,189854,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls50.html#v=ls50_black
+Lifestyle 30 Series 2 System,199736,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls30_series2.html#v=ls30_series2_black
+Lifestyle 25 Series 2 System,196575,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls25_series2.html#v=ls25_series2_black
+Lifestyle 25 System,187718,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls25_series1.html#v=ls25_series1_black
+Lifestyle 12 Series 2 System,196573,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls12_series2.html#v=ls12_series2_black
+Lifestyle 12 System,191409,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls12_series1.html#v=ls12_series1_black
+Lifestyle 8 Series 2 System,252876,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls8_series2.html#v=ls8_series2_black
+Lifestyle 8 System,189876,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls8_series1.html#v=ls8_series1_black
+Lifestyle 900 System,197749,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls900.html#v=ls900_black
+Lifestyle 800 System,255212,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls800.html#v=ls800_black
+Acoustimass 16 Series 2,293692,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am16_series2.html#v=am16_series2_black
+Acoustimass 16 Home Entertainment Speaker System,264924,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am16_series1.html#v=am16_series1_black
+Acoustimass 15 Series 2 Home Entertainment Speaker System,264924,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am15_series2.html#v=am15_series2_black
+Acoustimass 15 Home Theater Speaker System,194452,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am15_series1.html#v=am15_series1_black
+Acoustimass 10 Series 4 Home Entertainment Speaker System,294330,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am10_series4.html#v=am10_series4_black
+Acoustimass 10 Series 3 Home Theater Speaker System,264887,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am10_series3.html#v=am10_series3_black
+Acoustimass 10 Series 2 Home Theater Speaker System,194646,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am10_series2.html#v=am10_series2_black
+Acoustimass 10 Home Theater Speaker System,183644,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am10_series1.html#v=am10_series1_black
+Acoustimass 6 Series 3 Home Entertainment Speaker System,264887,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am6_series3.html#v=am6_series3_black
+Acoustimass 6 Series 2 Home Theater Speaker System,252172,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am6_series2.html#v=am6_series2_black
+Acoustimass 6 Home Theater Speaker System,189815,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am6_series1.html#v=am6_series1_black
+Acoustimass 700 Home Theater Speaker System,197898,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am700.html#v=am700_black
+Acoustimass 600 Home Theater Speaker System,missing in manual,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am600.html#v=am600_black
+Acoustimass HT Home Theater Speaker Package,manual N/A,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/am_ht.html#v=am_ht_black
+Acoustimass 10 Series 5 Home Theater Speaker System,717617,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/acoustimass-10-speaker-system.html#v=am10_v_black
+Acoustimass 6 Series 5 Home Theater Speaker System,717625,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/acoustimass-6-speaker-system.html#v=am6_v_black
+Cinemate 520 Home Theater System,732019,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/cinemate-520-home-theater-system.html#v=cinemate_520_black
+Soundtouch 520 Home Theater System,740967,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/soundtouch-520-home-theater-system.html#v=soundtouch_520_black
+Lifestyle V35 Home Entertainment System,324443,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lsv35.html#v=lsv35_black
+Lifestyle 535 Series 2 Home entertainment System,372663,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-535-series-iii-home-entertainment-system.html#v=ls535_iii_black
+SoundControl Hearing Aids,862367,https://www.bose.com/en_us/support/products/bose_wellness_support/soundcontrol-hearing-aids.html#v=soundcontrol_hearing_aids_gray
+Noise-Masking Sleepbuds,803889,https://www.bose.com/en_us/support/products/bose_wellness_support/noise-masking-sleepbuds.html#v=noise_masking_sleepbuds_silver
+Hearphones,780985,https://www.bose.com/en_us/support/products/bose_wellness_support/hearphones.html#v=hearphones_black
+Sleepbuds 2,842815,https://www.bose.com/en_us/support/products/bose_wellness_support/noise-masking-sleepbuds-ii.html#v=noise_masking_sleepbuds_ii_white
+Noise cancelling Headphones 700,827452,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/noise-cancelling-headphones-700.html#v=noise_cancelling_headphones_700_black
+QuietComfort 35 Wireless Headphones 1,767952,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/quietcomfort-35-wireless.html#v=qc35_black
+QuietComfort 35 Wireless Headphones 2,811772,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/quietcomfort-35-wireless-ii.html#v=qc35_ii_silver
+QuietComfort 2 Acoustic Noise Cancelling Headphones,315508,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/qc2.html#v=qc2_silver
+AE2 Audio Headphones,329539,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/ae2_headphones.html#v=ae2_headphones_black
+SoundTrue around-ear Headphones 2 Apple Devices,746182,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundtrue-around-ear-headphones-ii-apple-devices.html#v=soundtrue_ae_headphones_ii_apple_charcoal_black
+SoundLink Around-ear Bluetooth Headphones,735822,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundlink-around-ear-bluetooth-headphones.html#v=ae2w_headphones_black
+Quietcomfort Acoustic Noise Cancelling Headphones,254864,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/qc.html#v=qc_champ
+AE2i Audio Headphones,346022,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/ae2i_headphones.html#v=ae2i_headphones_black
+OE2 Audio Headphones,346799,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/oe2_headphones.html#v=oe2_headphones_black
+OE2i Audio Headphones,346800,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/oe2i_headphones.html#v=oe2i_headphones_black
+OE Audio Headphones,294496,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/oe_headphones.html
+SoundTrue On-ear Headphones,714524,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundtrue-on-ear-headphones.html
+On-ear Headphones,727763,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/mobile_oe_headset_v2.html
+Mobile On-Ear Headset,319137,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/mobile_oe_headset.html
+QuietComfort 25 Acoustic Noise Canelling Headphones Apple Devices,724152,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/quietcomfort-25-acoustic-noise-cancelling-headphones-apple-devices.html
+SoundLink On-ear Bluetooth Headphones,739826,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundlink-on-ear-bluetooth-headphones.html
+SoundTrue Around-ear Headphones,714531,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundtrue_ae_headphones.html
+QuietComfort 25 Acoustic Noise Cancelling Headphones Samsung and Android Devices,742963,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/quietcomfort-25-acoustic-noise-cancelling-headphones-samsung-and-android-devices.html
+SoundLink Around-ear Wireless Headphones 2,781391,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundlink-around-ear-wireless-headphones-ii.html
+SoundTrue Around-ear Headphones 2 Samsung and Android Devices,746183,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundtrue-around-ear-headphones-samsung-devices.html
+QuietComfort 3 Acoustic Noise Cancelling Headphones,324019,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/qc3.html
+QuietComfort 15 Acoustic Noise Cancelling Headphones,345875,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/qc15.html
+On-ear Wireless Headphones,791879,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/bose_oe_wireless_headphones.html
+BOSEBuild Headphones,423376,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/bosebuild-headphones.html
+SoundComm B40 Headset,826112,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/soundcomm-b40-headset.html
+Noise Cancelling Headphones 700 UC,858221,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/noise-cancelling-headphones-700-conferencing.html
+QuietComfort 35 2 Gaming Headset,860202,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_around_ear_headphones_support/quietcomfort-35-gaming-headset.html
+Sport Open Earbuds,869286,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/sport-open-earbuds.html
+Sport Earbuds,836279,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/bose-sport-earbuds.html
+SoundSport Free Wireless Headphones,789350,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-free-wireless.html
+SoundSport Pulse Wireless Headphones,771977,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-wireless-pulse.html
+QuietControl 30 Wireless Headphones,762456,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/quietcontrol-30.html
+Quietcomfort 20i Acoustic Noise Cancelling Headphone Apple Devices,363407,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/qc20i.html
+QuietComfort 20 Acoustic Noise Cancelling Headphones samsung and Android Devices,741079,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/quietcomfort-20-acoustic-noise-cancelling-headphones.html#v=qc20_samsung_white
+Bluetooth Headset Series 2,347801,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/bluetooth_headset_2.html
+Bluetooth Headset,328784,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/bluetooth_headset.html
+In-ear Headphones,309467,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/ie_headphones.html
+IE2 Audio headphones,327411,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/ie2_headphones.html
+M1E2i Mobile Headset,331087,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/mie2i_headset.html
+SoundTrue In-ear Headphones,721139,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundtrue-in-ear-headphones.html
+SoundTrue In-ear Headphones Samsung Galaxy Models,721141,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundtrue-in-ear-headphones-samsung-galaxy-models.html
+FreeStyle Earbuds,629545,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/black-friday-freestyle-earbuds.html
+SoundSport In-ear Headphones Samsung Galaxy Models,743729,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-ie-headphones-samsung.html
+S1E2 Sport Headphones,354729,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/sie2_headphones.html
+S1E2i Sport Headphones,354730,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/sie2i_headphones.html
+Mobile In-ear Headset,316835,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/mobile_ie_headset.html
+Mobile In-ear Headset V2,372080,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/mie_v2.html
+M1E2 Mobile Headset,327410,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/mie2_headset.html
+SoundSport In-ear Headphones Apple Devices,743726,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-ie-headphones-apple.html
+SoundTrue In-ear Headphones Apple Devices,721140,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundtrue-in-ear-headphones-ios-models.html
+QuietComfort 20 Acoustic Noise Cancelling Headphones Apple Devices,363408,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/quietcomfort-20i-acoustic-noise-cancelling-headphones.html
+QuietComfort 20 Acoustic Noise Cancelling Headphones Samsung and Android Devices,363407,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/qc20.html
+SoundTrue Ultra In-ear Headphones Apple Devices,740056,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundtrue-ultra-in-ear-headphones-apple-devices.html
+SoundTrue Ultra In-ear Headphones Samsung and Android Devices,746183,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundtrue-ultra-in-ear-headphones-samsung-devices.html
+SoundSport Wireless Headphones,768220,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/soundsport-wireless.html
+QuietComfort Earbuds,840344,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_in_ear_headphones_support/quietcomfort-earbuds.html
+A20 Aviation Headset,746706,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/a20-aviation-headset.html
+Aviation Headset Series 2,183953,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/aviation_headset_series2.html
+Aviation Headset,146068,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/aviation_headset_series1.html
+aviation Headset X,325239,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/ahx.html
+ProFlight Aviation Headset,802346,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/proflight-aviation-headset.html
+Product Improved Combat Vehicle Crewman (PICVC) Headset,manual N/A,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/combat-vehicle-crewman-headset.html
+Triport Tactical Headset Series 2,manual N/A,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/triport_tactical_headset_s2.html
+T5 Tactical Headset,manual N/A,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/t5_tactical_headset.html
+ProFlight Series 2 Aviation Headset,manual N/A,https://www.bose.com/en_us/support/products/bose_headphones_support/bose_aviation_headsets_support/proflight-aviation-headset-ii.html
+SoundLink Revolve+ 2 Bluetooth Speaker,858891,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink-revolve-plus-ii.html#v=soundlink_revolve_plus_ii_black
+SoundLink Revolve 2 Bluetooth Speaker,858882,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink-revolve-ii.html#v=soundlink_revolve_ii_black
+SoundLink Mini Bluetooth Speaker,372402,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_mini.html#v=Soundlink_Mini_Bt_Spkr_Slv_Club_Jp
+SoundLink Mini Bluetooth Speaker 2,741811,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_mini_ii.html#v=soundlink_mini_ii_carbon
+SoundLink Color Bluetooth Speaker,724379,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink-color-bluetooth-speaker.html#v=soundlink_color_black
+SoundLink Revolve Bluetooth Speaker,773386,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_revolve.html
+SoundLink Revolve+ Bluetooth Speaker,773381,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_revolve_plus.html#v=soundlink_revolve_plus_triple_black
+SoundLink Wireless Mobile Speaker,344922,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_mobile_leather.html
+SoundLink Bluetooth Mobile Speaker 2,359619,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_mobile_leather_2.html
+SoundLink Air Digital Music System,352050,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink_air.html
+Wireless Computer Speaker,346753,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/wireless_computer_speaker.html
+SoundLink Bluetooth Speaker 3,373985,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink-bluetooth-speaker-iii.html
+SoundLink Wireless Music System,135969,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink.html
+BOSEBuild Speaker Cube,missing in manual,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/bosebuild_speaker_cube.html
+SoundLink Micro Bluetooth Speaker,791854,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_portable_speakers_support/soundlink-micro.html
+Portable Smart Speaker,868835,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/bose-portable-home-speaker.html#v=bose_portable_home_speaker_black
+901 Series 6 Loudspeaker System,195438,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901-direct-reflecting-speaker-system.html
+901 Series 5 Direct/Reflecting Loudspeaker System,124375,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901_series5.html
+701 Series 2 Speaker,257816,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/701_series2.html
+601 Series 4 Speaker System,259438,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/601_series4.html
+501 Series 5 Direct/Reflecting Speakers,173019,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/501_series5.html
+401 Direct/Reflecting Speaker System,manual N/A,https://www.bose.com/content/consumer_electronics_support/b2c/north_america/websites/en_us/product/401.html
+301 Series 5 Direct/Reflecting Speakers,manual N/A,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301_series5.html
+301 Series 4 Speakers,181869,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301_series4.html
+201 Series 4 Speaker System,183562,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/201_series4.html
+Model 101 Music Monitor System,144057,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/101_series1.html
+Model 100 Speakers,170265,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/100.html
+901 Series 4 Direct/Reflecting Speaker System,111432,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901_series4.html
+901 Series 3 Direct/Reflecting Speaker System,108911,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901_series3.html#v=901_series3_cherry
+901 Series 2 Direct/Reflecting Speaker System 1973-1976,103476,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901_series2.html#v=901_series2_cherry
+901 Direct/Reflecting Speaker System,100469,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/901_series1.html#v=901_series1_cherry
+701 Speakers,172642,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/701_series1.html
+601 Series 3 Loudspeaker System,128800,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/601_series3.html
+601 Series 2 Direct/Reflecting Loudspeaker System,missing in manual,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/601_series2.html
+Model 601 Direct/reflecting Speaker System,109110,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/601_series1.html
+501 Series 4 Direct/Reflecting Loudspeaker System,123540,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/501_series4.html
+501 Series 3 Direct/Reflecting Loudspeaker System,117796,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/501_series3.html
+501 Series 2 Direct/Reflecting Speaker System,108907,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/501_series2.html
+Model 501 Direct/Reflecting Loudspeakers,114324,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/501_series1.html
+301 Series 3 Speakers,120749,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301_series3.html
+301 Series 2 Loudspeaker System,N/A,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301_series2.html
+Model 301 Direct/Reflecting Speaker System,112946,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301_series1.html
+301 Sonata Limited Edition Speakers,missing in manual,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/301sonata.html
+201 Series 3 Speaker System,145426,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/201_series3.html#v=201_series3_black
+201 Series 2 Loudspeaker System,123623,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/201_series2.html
+161 Speaker System,257524,https://www.boselatam.com/en_ar/support/products/bose_speakers_support/bose_stereo_support/161-speaker-system.html#v=161_black
+Bose 141 Series 2 Bookshelf Speakers,182344,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/141_series2.html
+Model 141 Speakers,182344,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/141_series1.html
+Model 101 Music Monitor Series 2 Speaker System,190197,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/101_series2.html
+10.2 Series 2 Direct/Reflecting System,136058,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/10_2_series2.html
+10.2 Stereo Everywhere Speaker System,128411,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/10_2_series1.html
+8.2 Stereo Everywhere System,127145,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/8_2.html
+6.2 Direct/Reflecting Speaker System,145559,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/6_2.html
+4.2 Series 2 Direct/Reflecting Speakers,148335,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/4_2_series2.html
+4.2 Direct/Reflecting Speaker System,138518,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/4_2_series1.html
+2.2 Series 2 Speaker System,148334,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/2_2_series2.html
+2.2 Speaker System,136991,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/2_2_series1.html
+Virtually Invisible 891 In Wall Speakers,750557,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/virtually-invisible-891-in-ceiling-speakers.html#v=virtually_invisible_891_white
+Virtually Invisible 791 In Ceiling Speakers 2,750575,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/virtually-invisible-791-in-ceiling-speakers.html#v=virtually_invisible_791_ii_white
+Virtually Invisible 791 In Ceiling Speakers,321052,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/791.html#v=791_white
+Virtually Invisible 691 In Wall Speakers,750557,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/virtually-invisible-691-in-ceiling-speakers.html
+Virtually Invisible 591 In Ceiling Speakers,750575,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/virtually-invisible-591-in-ceiling-speakers.html
+Virtually Invisible 191 In Wall Speakers,288341,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/virtually-invisible-191-in-wall-speakers.html
+4001 Direct/Reflecting Speakers,177636,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/4001.html
+2001 Speakers,175805,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/2001.html
+Model 171 Speakers,174031,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/171.html
+Model 111 Outdoor Loudspeaker,256602,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/111.html
+Model 100 J Speakers,180197,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/100j.html
+Freestyle Speaker System,267190,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/freestyle_system.html
+RoomMate 2 Powered Speaker System,135487,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/roommate_series2.html
+RoomMate Computer Monitor,136169,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/roommate_cm.html
+Pro RoomMate System,130908,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/pro_roommate.html
+Video RoomMate Speaker System,128404,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/video_roommate.html
+Interaudio Alpha Series Speakers,118069,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/interaudio_alpha.html
+Interaudio Speakers,146447,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/interaudio.html
+Studiocraft Speakers by Bose,115096,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/studiocraft.html
+OmniVector Speakers by Bose,124992,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/omnivector.html
+201 Direct/Reflecting Speaker System,264981,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/201-direct-reflecting-speaker-system.html
+The Bose 2201,missing in manual,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_stereo_support/2201.html
+Wave Music System 3,352154,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wave-music-system-iii.html#v=wave_music_system_iii_blue_100v_jp
+Wave Radio 3,352160,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wr_3.html#v=wr_3_graphite_gray
+Wave Radio 2,282991,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wr_series2.html#v=Wave_Radio_Ii_Graphite_230
+Wave Radio 4,745169,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wave-radio.html#v=wr_4_platinum_silver
+Wave Radio/CD,251771,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wrcd.html
+Wave Radio,255454,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wr_series1.html
+Acoustic Wave Music System 2,292564,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/acoustic-wave-music-system-ii.html
+Acoustic Wave Music System (Model CD3000),253543,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/cd3000.html
+Wave Music System Multi-CD Changer,359499,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wmsiii_mdc.html
+Acoustic Wave Music System 2 5-CD Changer,299365,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/awms_series2_mdc.html#v=awms_series2_mdc_black
+Acoustic Wave Music System (Model CS2010),173212,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/cs2010.html#v=cs2010_white
+Acoustic Wave Music System (CD2000),142149,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/cd2000.html#v=cd2000_white
+Acoustic Wave Music System (Model AW-1),125488,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/aw1.html#v=aw1_white
+Acoustic Wave Music System 5-CD Changer,303025,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/awms_series1_mdc.html#v=awms_series1_mdc_black
+Wave/PC Interactive System,259774,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wave_pc.html
+Wave Music System 4,745089,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wave-music-system.html
+Wave Music System,173212,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_wave_support/wms.html
+SoundDock Digital Music System,325316,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock.html
+SoundDock Portable Digital Music System,325323,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock_portable.html
+SoundDock 10 System,350940,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock_10.html
+SoundDock Series 2 Digital Music System,325319,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock_2.html
+Companion 5 Multimedia Speaker System,328138,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion-5-multimedia-speaker-system.html
+companion 3 Series 2 System,296583,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion3_series2.html
+Companion 2 Series 2 Multimedia Speaker System,325126,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion2_series2.html
+SoundDock XT Speaker,714545,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock-xt-speaker.html
+Computer MusicMonitor,307625,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/computer-musicmonitor.html
+Companion 3 System,271883,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion3_series1.html#v=companion3_series1_grey
+Companion 2 Multimedia Speaker System,279123,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion2_series1.html#v=companion2_series1_silver
+SoundDock Series 3 Digital Music System,362678,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/sounddock-series-iii-speaker.html
+Companion 2 Series 3 Multimedia Speaker System,manual N/A,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion-2-series-iii-multimedia-speaker-system.html
+Companion 20 Multimedia Speaker System,344839,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/companion-20-multimedia-speaker-system.html
+MediaMate Computer Speakers,135596,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_docking_and_computer_support/mm.html
+131 Marine Speakers,188201,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_outdoor_speakers_support/131-marine-speakers.html
+251 Environmental Speakers,250811,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_outdoor_speakers_support/251-environmental-speakers.html
+Free Space 51 Environmental Speakers,268612,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_outdoor_speakers_support/free-space-51-environmental-speakers.html
+151 SE Environmental Speakers,273809,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_outdoor_speakers_support/151-se-environmental-speakers.html
+151 Environmental Speakers,171297,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_outdoor_speakers_support/151_environmental_speaker.html
+Bose Portable Smart Speaker,868835,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/bose-portable-home-speaker.html
+SoundTouch Wireless Link Adapter,774339,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-adapter.html
+Lifestyle 650 Home Entertainment System,799905,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-650-home-theater-system.html
+Lifestyle 535 Series 3 Home Entertainment System,720422,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-535-series-iii-home-entertainment-system.html
+Lifestyle SoundTouch 535 Entertainment System,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-soundtouch-535-entertainment-system.html
+Lifestyle 525 Series 3 Home Entertainment System,740968,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-525-series-iii-home-entertainment-system.html
+Lifestyle 525 Series 2 Home Entertainment System,372639,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls525_ii.html
+Lifestyle SoundTouch 525 Entertainment System,753272,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-soundtouch-525-entertainment-system.html
+CineMate 120 Home Theater System,715107,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate-120-home-theater-system.html
+Lifestyle 135 System 2,372639,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/lifestyle_135_series_ii.html
+Lifestyle SoundTouch 135 Entertainment System,740968,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/lifestyle-soundtouch-135-entertainment-system.html
+SoundTouch 20 Series 2 Wi-Fi Music System,734227,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-20-series-ii-wi-fi-music-system.html
+SoundTouch 30 Series 2 Wi-Fi Music System,734227,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-30-series-ii-wi-fi-music-system.html
+SoundTouch 30 System,363355,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch_30_series_i.html
+SoundTouch Portable Series 2 Wi-Fi Music System,734226,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-portable-series-ii-wi-fi-music-system.html
+SoundTouch Portable System,626647,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch_portable_series_i.html
+Wave SoundTouch Music System,730914,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/wms_soundtouch.html#v=Wave_Soundtouch_Hg_White_100V_Jp
+SoundTouch Soundbar System,773965,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-soundbar-system.html
+SoundTouch SA-4 Amplifier Package,625304,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-sa-4-amplifier-package.html
+Bose Lifestyle SoundTouch 235 Entertainment System,740968,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/lifestyle-soundtouch-235-entertainment-system.html
+SoundTouch Controller,370752,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-controller.html
+CineMate 220 Home Cinema System,715112,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/cinemate_220.html
+SoundTouch Wireless Adapter for CineMate Systems,732019,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-wireless-adapter-for-cinemate-systems.html
+SoundTouch 220 Home Theater System,740967,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/soundtouch-220-home-theater-system.html
+SoundTouch Series 2 Wireless Adapter,740958,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-wireless-adapter.html
+Lifestyle 235 System 3,720422,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/lifestyle_235_series_iii.html
+VideoWave 3 55,370619,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/videowave_iii_55.html
+VideoWave 3 46,370619,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/videowave_iii_46.html
+SoundTouch Stereo JC Series 2 Wi-Fi Music System,719723,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-stereo-jc-series-ii-wi-fi-music-system.html
+SoundTouch Stereo JC System,370789,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch_stereo_jc.html
+Lifestyle 135 Series 3 Home entertainment System,720993,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/ls135_iii.html
+CineMate 130 Home Theater System,715117,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/cinemate-130-home-theater-system.html
+CineMate 520 Home Theater System,732019,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/cinemate-520-home-theater-system.html
+SoundTouch 120 Home Theater System,740967,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-120-home-theater-system.html
+SoundTouch 130 Home Theater System,759890,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/soundtouch-130-home-theater-system.html
+SoundTouch 520 Home Theater System,740971,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/soundtouch-520-home-theater-system.html
+SoundTouch 10 Wireless Speaker,785169,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-10-wireless-system.html
+Wave SoundTouch Music System 4,785174,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/wave-soundtouch-music-system.html
+SoundTouch 20 Wireless Speaker,801086,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-20-wireless-music-system.html
+SoundTouch 30 Wireless Speaker,785170,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-30-wireless-music-system.html
+SoundTouch SA-5 Amplifier,787179,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-sa-5-amplifier.html
+Lifestyle 600 Home Entertainment System,799911,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/lifestyle-600-home-theater-system.html
+Lifestyle 535 Series 2 Home Entertainment System,372633,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_5_speaker_home_theater_support/ls535_ii.html
+Lifestyle 235 System 2,372639,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_2_speaker_home_theater_support/lifestyle_235_series_ii.html
+SoundTouch 20 System,801086,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/soundtouch-20-wireless-music-system.html
+Bose Smart Speaker 500,868834,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/bose-home-speaker-500.html
+Bose Soundbar 500,810604,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundbar-500.html
+Bose Smart Soundbar 700,810651,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-soundbar-700.html
+Bose Home Speaker 300,830857,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/bose-home-speaker-300.html
+Bose Home Speaker 450,837355,https://www.bose.com/en_us/support/products/bose_speakers_support/bose_smarthome_speakers_support/bose-home-speaker-450.html
+Bose Smart Soundbar 300,858459,https://www.bose.com/en_us/support/products/bose_home_theater_support/bose_soundbar_and_1_speaker_home_theater_support/bose-smart-soundbar-300.html
