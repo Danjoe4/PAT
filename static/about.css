@@ -1,79 +1,448 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
+ @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-li, a {
-    font-family: "Exo", sans-serif;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    text-decoration: none;
-}
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    border-bottom: solid 1px grey;
-}
-
-.logo {
-    background-color: black;
-    cursor: pointer;
-    padding-left: 10px;
-}
-
-.navigation{
-    background-color: black;
-}
-
-.navigation li {
-    display: inline-block;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 50px;
-}
-
-/* Delay before and after applying effect */
-.navigation li a {
-    transition: all 0.3s ease 0s;
-}
-
-/* Hover on Menu */
-.navigation li a:hover {
-    color: #29ccc4;
-    
-}
-
-/* Mantain Color on Current Tab */
-.navigation li a.active {
-    color: #29ccc4;
-    border-bottom: solid 3px #29ccc4;
-    padding-bottom: 19px;       /* Space Between  line and Word */
-}
-
-.wrapper{
-    list-style: none;
-}
-
-.main_image{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-/* 
-@media only screen and (min-width: 768px) {
-    
-}
-
-@media only screen and (min-width: 1000px) {
-
-} */
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .section{
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+ 
+ body {
+     overflow-x: hidden;
+ }
+ 
+ a:hover,
+ a:focus,
+ a:active,
+ a.active {
+     color: #29ccc4;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-weight: 700;
+ }
+ 
+ /* For Logo to fit in Navbar */
+ 
+ .navbar-brand{
+     padding-top: 0;
+     padding-left: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+ }
+ 
+ /* Allocates the Text In the Navbar */
+ 
+ .page-scroll{
+     bottom: -20px;
+ }
+ 
+ .navbar-header .navbar-toggle{
+     height: 45px;
+     bottom: -5px;   
+ }
+ 
+ .img-centered {
+     margin: 0 auto;
+ }
+ 
+ /* ------------- */
+ /* Navbar Styles */
+ /* ------------- */
+ 
+ /* Navbar Color */
+ 
+ .navbar-default {
+     border-color: transparent;
+     background-color: black;
+ }
+ 
+ /* Navbar Mobile Separating Line Color */
+ 
+ .navbar-default .navbar-collapse {
+     border-color: rgba(255,255,255,.02);
+ }
+ 
+ /* Hamburger Button Color */
+ 
+ .navbar-default .navbar-toggle {
+     border-color: #29ccc4;
+     background-color: #29ccc4;
+ }
+ 
+ /* Hamburger Button Line's Color */
+ 
+ .navbar-default .navbar-toggle .icon-bar {
+     background-color: #fff;
+ }
+ 
+ /* Hamburger Button Color After Toggle */
+ 
+ .navbar-default .navbar-toggle:hover,
+ .navbar-default .navbar-toggle:focus {
+     background-color: #29ccc4;
+ }
+ 
+ /* Text and Styling for Navbar */
+ 
+ .navbar-default .nav li a {
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     color: #fff;
+ }
+ 
+ /* Color of Text When Hover */
+ 
+ .navbar-default .nav li a:hover,
+ .navbar-default .nav li a:focus {
+     outline: 0;
+     color: #1ee2e7;
+ }
+ 
+ /* Color for Highlight Bar When Scrolling */
+ 
+ .navbar-default .navbar-nav>.active>a {
+     border-radius: 0;
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Color for Highlight Bar when Static */
+ 
+ .navbar-default .navbar-nav>.active>a:hover,
+ .navbar-default .navbar-nav>.active>a:focus {
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Mobile Navbar Styles */
+ 
+ @media(min-width:768px) {
+     .navbar-default {
+         padding: 25px 0;
+         border: 0;
+         background-color: transparent;
+         -webkit-transition: padding .3s;
+         -moz-transition: padding .3s;
+         transition: padding .3s;
+     }
+ 
+     .navbar-default .navbar-brand {
+         font-size: 2em;
+         -webkit-transition: all .3s;
+         -moz-transition: all .3s;
+         transition: all .3s;
+     }
+ 
+     .navbar-default .navbar-nav>.active>a {
+         border-radius: 3px;
+     }
+ 
+     .navbar-default.navbar-shrink {
+         padding: 10px 0;
+         background-color: black;
+     }
+ 
+     .navbar-default.navbar-shrink .navbar-brand {
+         font-size: 1.5em;
+     }
+ }
+ 
+ /* ------------- */
+ /* Header Styles */
+ /* ------------- */
+ 
+ header {
+     text-align: center;
+     color: #fff;
+     background-attachment: scroll;
+     background-image: url(temp.png);
+     background-position: center center;
+     background-repeat: none;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+ }
+ 
+ header .intro-text {
+     padding-top: 100px;
+     padding-bottom: 50px;
+ }
+ 
+ header .intro-text .intro-lead-in {
+     margin-bottom: 25px;
+     font-family: "Exo", sans-serif;
+     font-size: 22px;
+     color: white;
+     font-style: italic;
+     line-height: 22px;
+ }
+ 
+ header .intro-text .intro-heading {
+     margin-bottom: 25px;
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 50px;
+     color: white;
+     font-weight: 700;
+     line-height: 50px;
+ }
+ 
+ @media(min-width:768px) {
+     header .intro-text {
+         padding-top: 300px;
+         padding-bottom: 200px;
+     }
+ 
+     header .intro-text .intro-lead-in {
+         margin-bottom: 25px;
+         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+         font-size: 40px;
+         font-style: italic;
+         line-height: 40px;
+     }
+ 
+     header .intro-text .intro-heading {
+         margin-bottom: 50px;
+         text-transform: uppercase;
+         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+         font-size: 75px;
+         font-weight: 700;
+         line-height: 75px;
+     }
+ }
+ 
+ /* --------------- */
+ /* Overview Styles */
+ /* --------------- */
+ 
+ 
+ .overview-image{
+     width: 420px;
+     height: 420px;
+     margin-top: 80px;
+     margin-bottom: 80px;
+     margin-left: 100px;
+     display: block;
+ }
+ 
+ .bg-overview{
+     width: auto;
+     padding:5rem;
+     background-color: white;
+     color: black;
+ }
+ 
+ section h2.section-heading {
+     margin-top: 100px;
+     margin-bottom: 15px;
+     font-size: 40px;
+ }
+ 
+ section h3.section-subheading {
+     margin-top: 50px;
+     text-transform: none;
+     font-family: "Exo", sans-serif;
+     line-height: 150%;
+     font-size: 20px;
+     text-align: justify;
+     font-weight: 400;
+ }
+ 
+ @media(min-width:768px) {
+     section {
+         padding: 150px 0;
+     }
+ }
+ 
+ .service-heading {
+     margin: 15px 0;
+     text-transform: none;
+ }
+ 
+ 
+ /* ------------ */
+ /* About Sytles */
+ /* ------------ */
+ 
+ .about-image{
+     width: 420px;
+     height: 420px;
+     margin-top: 80px;
+     margin-bottom: 80px;
+     display: block;
+ }
+ 
+ .bg-about{
+     width: auto;
+     padding:2rem;
+     background-color: black;
+     color: white;
+ }
+ 
+ @media(min-width:768px) {
+     section {
+         padding: 150px 0;
+     }
+ }
+ 
+ @media(min-width:992px) {
+     section {
+         padding: 150px 0;
+     }
+ }
+ 
+ @media(min-width:1200px) {
+     section {
+         padding: 150px 0;
+     }
+ }
+ 
+ /* ---------------------- */
+ /* Prodcut Styles */
+ /* ---------------------- */
+ 
+ .product-image{
+     width: 520px;
+     height: 480px;
+     margin-top: 60px;
+     margin-bottom: 80px;
+     margin-left: 100px;
+     display: block;
+ }
+ 
+ .bg-product{
+     width: 100%;
+     padding:5rem;
+     background-color: white;
+     color: black;
+ }
+ 
+ /* -------------- */
+ /* Contact Styles */
+ /* -------------- */
+ 
+ .form-group{
+     font-family: "Exo", sans-serif;
+ }
+ 
+ .contact-image{
+     width: 520px;
+     height: 480px;
+     margin-bottom: 80px;
+     margin-left: 0px;
+     display: block;
+ }
+ 
+ .bg-contact{
+     width: 100%;
+     padding:2rem;
+     background-color: black;
+     color: white;
+ }
+ 
+ .form-space{
+     margin-top: 100px;
+ }
+ 
+ textarea{
+     resize: vertical;
+     min-height: 300px;
+ }
+ 
+ /* Form Button */
+ 
+ .btn-xl {
+     padding: 20px 40px;
+     border-color: #29ccc4;
+     border-radius: 3px;
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 16px;
+     font-weight: 700;
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Form Button on Hover */
+ 
+ .btn-xl:hover,
+ .btn-xl:focus,
+ .btn-xl:active,
+ .btn-xl.active,
+ .open .dropdown-toggle.btn-xl {
+     border-color: #17d0d5;
+     color: #fff;
+     background-color: #17d0d5;
+ }
+ 
+ /* ------------- */
+ /* Footer Styles */
+ /* ------------- */
+ 
+ footer {
+     padding: 25px 0;
+     text-align: center;
+ }
+ 
+ /* Copyright Declaration Style */
+ 
+ footer span.copyright {
+     text-transform: uppercase;
+     text-transform: none;
+     font-family: "Exo", sans-serif;
+     line-height: 40px;
+ }
+ 
+ /* Privacy and Terms links */
+ 
+ footer ul.quicklinks {
+     margin-bottom: 0;
+     text-transform: uppercase;
+     text-transform: none;
+     font-family: "Exo", sans-serif;
+     line-height: 40px;
+ }
+ 
+ ul.social-buttons {
+     margin-bottom: 0;
+ }
+ 
+ ul.social-buttons li a {
+     display: block;
+     width: 40px;
+     height: 40px;
+     border-radius: 100%;
+     font-size: 20px;
+     line-height: 40px;
+     outline: 0;
+     color: #fff;
+     background-color: #222;
+     -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+     transition: all .3s;
+ }
+ 
+ 
