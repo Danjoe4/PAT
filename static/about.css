@@ -176,8 +176,8 @@
  header {
      text-align: center;
      color: #fff;
-     background-attachment: scroll;
-     background-image: url(temp.png);
+     background-attachment: scroll; 
+     background-image: url(images/temp.png);
      background-position: center center;
      background-repeat: none;
      -webkit-background-size: cover;
