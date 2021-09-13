@@ -1,3 +1,4 @@
+// Smooth Scrolling when click Navbar 
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);

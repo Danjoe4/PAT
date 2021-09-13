@@ -6,6 +6,9 @@
 
  @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/* --------------- */
+/* General Styling */
+/* --------------- */
 
  *{
      box-sizing: border-box;
@@ -13,13 +16,22 @@
      padding: 0;
  }
  
+/* img{
+    width: 50px;
+    height: 50px;
+} */
+
  .section{
      padding-top: 0;
      padding-bottom: 0;
  }
  
  body {
-     overflow-x: hidden;
+    overflow-x: hidden;
+ }
+
+ .container{
+     border: 1px solid red; 
  }
  
  a:hover,
@@ -39,6 +51,56 @@
      font-family: "Exo", sans-serif;
      font-weight: 700;
  }
+
+
+ section h2.section-heading {
+    /* margin-top: 100px; */
+    /* margin-bottom: 15px; */
+    word-wrap: break-word;
+    font-size: 30px;
+}
+
+section h3.section-subheading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: none;
+    font-family: "Exo", sans-serif;
+    line-height: 150%;
+    word-wrap: break-word;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+ 
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
+}
+
+/* General Web and Table Style */
+
+@media only screen and (min-width:768px) {
+    section h2.section-heading {
+        margin-top: 100px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    section h3.section-subheading {
+        margin-top: 50px;
+        text-transform: none;
+        font-family: "Exo", sans-serif;
+        line-height: 180%;
+        font-size: 22px;
+        text-align: justify;
+        font-weight: 400;
+    }
+}
+
+/* ------------- */
+/* Navbar Styles */
+/* ------------- */
+ 
  
  /* For Logo to fit in Navbar */
  
@@ -49,27 +111,26 @@
      padding-bottom: 0;
  }
  
- /* Allocates the Text In the Navbar */
- 
- .page-scroll{
-     bottom: -20px;
- }
- 
- .navbar-header .navbar-toggle{
-     height: 45px;
-     bottom: -5px;   
- }
- 
- .img-centered {
-     margin: 0 auto;
- }
- 
- /* ------------- */
- /* Navbar Styles */
- /* ------------- */
- 
+ /* Allocates the "Vault" Text In the Navbar */
+
+.logo-text{
+    text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 20px;
+     font-weight: 300;
+     letter-spacing: 1px;
+     color: #fff;
+}
+
  /* Navbar Color */
  
+ .navbar-brand > img {
+    max-height: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
+
  .navbar-default {
      border-color: transparent;
      background-color: black;
@@ -136,9 +197,9 @@
      background-color: #29ccc4;
  }
  
- /* Mobile Navbar Styles */
+ /* Navbar Web and Tablet Styles */
  
- @media(min-width:768px) {
+ @media only screen and (min-width:768px) {
      .navbar-default {
          padding: 25px 0;
          border: 0;
@@ -178,8 +239,8 @@
      color: #fff;
      background-attachment: scroll; 
      background-image: url(images/temp.png);
-     background-position: center center;
-     background-repeat: none;
+     background-position: center center;   
+     background-repeat: no-repeat;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      background-size: cover;
@@ -210,27 +271,31 @@
      line-height: 50px;
  }
  
- @media(min-width:768px) {
+/* Header Web and Tablet Styles */
+
+ @media only screen and (min-width:768px) {
      header .intro-text {
          padding-top: 300px;
          padding-bottom: 200px;
      }
  
      header .intro-text .intro-lead-in {
-         margin-bottom: 25px;
-         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-         font-size: 40px;
-         font-style: italic;
-         line-height: 40px;
+        margin-bottom: 25px;
+        font-family: "Exo", sans-serif;
+        font-size: 22px;
+        color: white;
+        font-style: italic;
+        line-height: 22px;
      }
  
      header .intro-text .intro-heading {
-         margin-bottom: 50px;
-         text-transform: uppercase;
-         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-         font-size: 75px;
-         font-weight: 700;
-         line-height: 75px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: "Exo", sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        line-height: 50px;
      }
  }
  
@@ -240,12 +305,10 @@
  
  
  .overview-image{
-     width: 420px;
-     height: 420px;
-     margin-top: 80px;
-     margin-bottom: 80px;
-     margin-left: 100px;
-     display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;    
+    display: block;
  }
  
  .bg-overview{
@@ -254,47 +317,50 @@
      background-color: white;
      color: black;
  }
- 
- section h2.section-heading {
-     margin-top: 100px;
-     margin-bottom: 15px;
-     font-size: 40px;
- }
- 
- section h3.section-subheading {
-     margin-top: 50px;
-     text-transform: none;
-     font-family: "Exo", sans-serif;
-     line-height: 150%;
-     font-size: 20px;
-     text-align: justify;
-     font-weight: 400;
- }
- 
- @media(min-width:768px) {
+  
+/* Overview Web and Tablet Styles */
+
+ @media only screen and (min-width:768px) {
      section {
          padding: 150px 0;
      }
+
+     .overview-image{
+        width: 420px;
+        height: 420px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 100px;
+        display: block;
+    }
  }
- 
- .service-heading {
-     margin: 15px 0;
-     text-transform: none;
- }
- 
+
  
  /* ------------ */
  /* About Sytles */
  /* ------------ */
  
  .about-image{
-     width: 420px;
-     height: 420px;
-     margin-top: 80px;
-     margin-bottom: 80px;
-     display: block;
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;    
+    display: block;
  }
- 
+
+/* Rectify the Margin on Mobile */
+
+ .rect-margin{
+     margin-top: 50px;
+ }
+
+.web{
+    display: none;
+}
+
+.mov{
+    display: block;
+}
+
  .bg-about{
      width: auto;
      padding:2rem;
@@ -302,44 +368,65 @@
      color: white;
  }
  
- @media(min-width:768px) {
-     section {
-         padding: 150px 0;
-     }
- }
- 
- @media(min-width:992px) {
-     section {
-         padding: 150px 0;
-     }
- }
- 
- @media(min-width:1200px) {
-     section {
-         padding: 150px 0;
-     }
- }
+/* About Web and Tablet Styles */
+
+@media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .web{
+        display: block;
+    }
+
+    .mov{
+        display: none;
+    }
+
+    .about-image{
+     width: 420px;
+     height: 420px;
+     margin-top: 80px;
+     margin-bottom: 80px;
+     display: block;
+    }
+}
  
  /* ---------------------- */
  /* Prodcut Styles */
  /* ---------------------- */
  
  .product-image{
-     width: 520px;
-     height: 480px;
-     margin-top: 60px;
-     margin-bottom: 80px;
-     margin-left: 100px;
-     display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;    
+    display: block;
  }
  
  .bg-product{
-     width: 100%;
+     width: auto;
      padding:5rem;
      background-color: white;
      color: black;
  }
- 
+
+ /* Product Web and Tablet Styles */
+
+ @media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .product-image{
+        width: 520px;
+        height: 490px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        margin-left: 80px;
+        display: block;
+    }
+}
+
  /* -------------- */
  /* Contact Styles */
  /* -------------- */
@@ -347,26 +434,28 @@
  .form-group{
      font-family: "Exo", sans-serif;
  }
- 
+
+ /* Removes the image on mobile view */
+
  .contact-image{
-     width: 520px;
-     height: 480px;
-     margin-bottom: 80px;
-     margin-left: 0px;
-     display: block;
+    display: none;
  }
  
  .bg-contact{
-     width: 100%;
-     padding:2rem;
+     width: auto;
+     padding:3rem;
      background-color: black;
      color: white;
  }
  
+/* Fitting the form in the section */
+
  .form-space{
-     margin-top: 100px;
+     margin-top: 20px;
  }
  
+/* Message Box Styling */
+
  textarea{
      resize: vertical;
      min-height: 300px;
@@ -397,6 +486,34 @@
      color: #fff;
      background-color: #17d0d5;
  }
+
+/* Contact Web and Tablet Styles */
+
+@media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .bg-contact{
+        width: auto;
+        padding:2rem;
+        background-color: black;
+        color: white;
+    }
+
+    .contact-image{
+        width: 520px;
+        height: 480px;
+        margin-bottom: 80px;
+        margin-left: 0px;
+        display: block;
+    }
+
+    .form-space{
+        margin-top: 100px;
+    }
+}
+
  
  /* ------------- */
  /* Footer Styles */

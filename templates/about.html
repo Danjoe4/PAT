@@ -23,8 +23,10 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <!-- Logo -->                              
-                <img class="navbar-brand page-scroll" src="{{url_for('static', filename='images/logo.jpeg')}}" style="width:75px;height:75px;display:block;" alt="Logo">
+                <!-- Logo -->  
+                <a class="navbar-brand page-scroll" href="#page-top">                            
+                <img src="{{url_for('static', filename='images/logo.jpeg')}}"  alt="Logo"> <span class="logo-text">Vault</span>
+                </a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -87,17 +89,20 @@
     <section id="about" class="section">
         <div class="container bg-about">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-5 web">
                     <img class="about-image" src="{{url_for('static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
                 </div>
                 <div class="col-lg-6 text-center">
-                    <h2 class="section-heading">SIMPLE & SECURE E-COMMERCE VERIFICATION</h2>
+                    <h2 class="section-heading rect-margin">SIMPLE & SECURE E-COMMERCE VERIFICATION</h2>
                     <h3 class="section-subheading">
                         A 2018 US Government Accountability Office report found
                         that  42%  of  items  purchased  from  online  retailors  were
                         counterfeit. Give your customers a straight forward way to
                         determine what is real and what is fake with Vault's
                         Blockchain Authentication Codes.</h3>
+                </div>
+                <div class="col-lg-5 mov">
+                    <img class="about-image" src="{{url_for('static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
                 </div>
             </div>
         </div>
