@@ -16,11 +16,6 @@
      padding: 0;
  }
  
-/* img{
-    width: 50px;
-    height: 50px;
-} */
-
  .section{
      padding-top: 0;
      padding-bottom: 0;
@@ -28,10 +23,6 @@
  
  body {
     overflow-x: hidden;
- }
-
- .container{
-     border: 1px solid red; 
  }
  
  a:hover,
@@ -77,7 +68,7 @@ section h3.section-subheading {
     text-transform: none;
 }
 
-/* General Web and Table Style */
+/* General Web Style */
 
 @media only screen and (min-width:768px) {
     section h2.section-heading {
@@ -93,6 +84,29 @@ section h3.section-subheading {
         line-height: 180%;
         font-size: 22px;
         text-align: justify;
+        font-weight: 400;
+    }
+}
+
+/* General Table Style */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    section h2.section-heading {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        word-wrap: break-word;
+        font-size: 40px;
+    }
+    
+    section h3.section-subheading {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-transform: none;
+        font-family: "Exo", sans-serif;
+        line-height: 150%;
+        word-wrap: break-word;
+        font-size: 24px;
+        text-align: center;
         font-weight: 400;
     }
 }
@@ -230,6 +244,7 @@ section h3.section-subheading {
      }
  }
  
+
  /* ------------- */
  /* Header Styles */
  /* ------------- */
@@ -271,7 +286,7 @@ section h3.section-subheading {
      line-height: 50px;
  }
  
-/* Header Web and Tablet Styles */
+/* Header Web Styles */
 
  @media only screen and (min-width:768px) {
      header .intro-text {
@@ -298,6 +313,34 @@ section h3.section-subheading {
         line-height: 50px;
      }
  }
+
+/* Header Tablet Styles */
+
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    header .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Exo", sans-serif;
+        font-size: 22px;
+        color: white;
+        font-style: italic;
+        line-height: 22px;
+    }
+    
+    header .intro-text .intro-heading {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: "Exo", sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        line-height: 50px;
+    }
+}
  
  /* --------------- */
  /* Overview Styles */
@@ -318,7 +361,7 @@ section h3.section-subheading {
      color: black;
  }
   
-/* Overview Web and Tablet Styles */
+/* Overview Web Styles */
 
  @media only screen and (min-width:768px) {
      section {
@@ -335,6 +378,23 @@ section h3.section-subheading {
     }
  }
 
+/* Overview Tablet Styles */
+
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .overview-image{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;    
+        display: block;
+     }
+     
+     .bg-overview{
+         width: auto;
+         padding:5rem;
+         background-color: white;
+         color: black;
+     }
+}
  
  /* ------------ */
  /* About Sytles */
@@ -350,7 +410,7 @@ section h3.section-subheading {
 /* Rectify the Margin on Mobile */
 
  .rect-margin{
-     margin-top: 50px;
+     margin-top: 100px;
  }
 
 .web{
@@ -368,7 +428,7 @@ section h3.section-subheading {
      color: white;
  }
  
-/* About Web and Tablet Styles */
+/* About Web Styles */
 
 @media only screen and (min-width:768px) {
     section {
@@ -392,6 +452,36 @@ section h3.section-subheading {
     }
 }
  
+/* About Tablet Styles */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .about-image{
+        max-height: 100%;
+        max-width: 100%;
+        /* margin: auto;     */
+        display: block;
+     }
+    
+    .web{
+        display: none;
+    }
+    
+    .rect-margin{
+        margin-top: 100px;
+    }
+
+    .mov{
+        display: block;
+    }
+    
+     .bg-about{
+         width: auto;
+         padding:2rem;
+         background-color: black;
+         color: white;
+     }
+}
+
  /* ---------------------- */
  /* Prodcut Styles */
  /* ---------------------- */
@@ -410,7 +500,7 @@ section h3.section-subheading {
      color: black;
  }
 
- /* Product Web and Tablet Styles */
+ /* Product Web Styles */
 
  @media only screen and (min-width:768px) {
     section {
@@ -418,13 +508,31 @@ section h3.section-subheading {
     }
 
     .product-image{
-        width: 520px;
-        height: 490px;
+        width: 618px;
+        height: 520px;
         margin-top: 60px;
         margin-bottom: 80px;
         margin-left: 80px;
         display: block;
     }
+}
+
+/* Product Tablet Styles */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .product-image{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;    
+        display: block;
+     }
+     
+     .bg-product{
+         width: auto;
+         padding:5rem;
+         background-color: white;
+         color: black;
+     }
 }
 
  /* -------------- */
@@ -487,7 +595,7 @@ section h3.section-subheading {
      background-color: #17d0d5;
  }
 
-/* Contact Web and Tablet Styles */
+/* Contact Web Styles */
 
 @media only screen and (min-width:768px) {
     section {
@@ -502,10 +610,10 @@ section h3.section-subheading {
     }
 
     .contact-image{
-        width: 520px;
-        height: 480px;
-        margin-bottom: 80px;
-        margin-left: 0px;
+        width: 420px;
+        height: 594px;
+        margin-top: -80px;
+        margin-left: 40px;
         display: block;
     }
 
@@ -514,7 +622,26 @@ section h3.section-subheading {
     }
 }
 
+/* Contact Tablet Styles */
  
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .contact-image{
+       display: none;
+    }
+    
+    .bg-contact{
+        width: auto;
+        padding:3rem;
+        background-color: black;
+        color: white;
+    }
+    
+    .form-space{
+        margin-top: 20px;
+    }
+    
+}
+
  /* ------------- */
  /* Footer Styles */
  /* ------------- */
@@ -546,17 +673,21 @@ section h3.section-subheading {
  ul.social-buttons {
      margin-bottom: 0;
  }
+
+ .img-social{
+    max-height: 75%;
+    max-width: 75%;
+    margin: auto;    
+    /* display: block; */
+ }
  
  ul.social-buttons li a {
-     display: block;
+     display: flex;
      width: 40px;
      height: 40px;
      border-radius: 100%;
-     font-size: 20px;
-     line-height: 40px;
-     outline: 0;
      color: #fff;
-     background-color: #222;
+     background-color: #29ccc4;
      -webkit-transition: all .3s;
      -moz-transition: all .3s;
      transition: all .3s;
