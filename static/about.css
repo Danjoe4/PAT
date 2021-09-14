@@ -1,79 +1,696 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: white;
+ @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --------------- */
+/* General Styling */
+/* --------------- */
+
+ *{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .section{
+     padding-top: 0;
+     padding-bottom: 0;
+ }
+ 
+ body {
+    overflow-x: hidden;
+ }
+ 
+ a:hover,
+ a:focus,
+ a:active,
+ a.active {
+     color: #29ccc4;
+ }
+ 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-weight: 700;
+ }
+
+
+ section h2.section-heading {
+    /* margin-top: 100px; */
+    /* margin-bottom: 15px; */
+    word-wrap: break-word;
+    font-size: 30px;
 }
 
-li, a {
+section h3.section-subheading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: none;
     font-family: "Exo", sans-serif;
-    font-weight: 700;
-    color: white;
-    background-color: black;
-    text-decoration: none;
+    line-height: 150%;
+    word-wrap: break-word;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+ 
+.service-heading {
+    margin: 15px 0;
+    text-transform: none;
 }
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    border-bottom: solid 1px grey;
+/* General Web Style */
+
+@media only screen and (min-width:768px) {
+    section h2.section-heading {
+        margin-top: 100px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    section h3.section-subheading {
+        margin-top: 50px;
+        text-transform: none;
+        font-family: "Exo", sans-serif;
+        line-height: 180%;
+        font-size: 22px;
+        text-align: justify;
+        font-weight: 400;
+    }
 }
 
-.logo {
-    background-color: black;
-    cursor: pointer;
-    padding-left: 10px;
-}
+/* General Table Style */
 
-.navigation{
-    background-color: black;
-}
-
-.navigation li {
-    display: inline-block;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-right: 50px;
-}
-
-/* Delay before and after applying effect */
-.navigation li a {
-    transition: all 0.3s ease 0s;
-}
-
-/* Hover on Menu */
-.navigation li a:hover {
-    color: #29ccc4;
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    section h2.section-heading {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        word-wrap: break-word;
+        font-size: 40px;
+    }
     
+    section h3.section-subheading {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-transform: none;
+        font-family: "Exo", sans-serif;
+        line-height: 150%;
+        word-wrap: break-word;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 400;
+    }
 }
 
-/* Mantain Color on Current Tab */
-.navigation li a.active {
-    color: #29ccc4;
-    border-bottom: solid 3px #29ccc4;
-    padding-bottom: 19px;       /* Space Between  line and Word */
+/* ------------- */
+/* Navbar Styles */
+/* ------------- */
+ 
+ 
+ /* For Logo to fit in Navbar */
+ 
+ .navbar-brand{
+     padding-top: 0;
+     padding-left: 0;
+     padding-right: 0;
+     padding-bottom: 0;
+ }
+ 
+ /* Allocates the "Vault" Text In the Navbar */
+
+.logo-text{
+    text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 20px;
+     font-weight: 300;
+     letter-spacing: 1px;
+     color: #fff;
 }
 
-.wrapper{
-    list-style: none;
-}
+ /* Navbar Color */
+ 
+ .navbar-brand > img {
+    max-height: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+  }
 
-.main_image{
+ .navbar-default {
+     border-color: transparent;
+     background-color: black;
+ }
+ 
+ /* Navbar Mobile Separating Line Color */
+ 
+ .navbar-default .navbar-collapse {
+     border-color: rgba(255,255,255,.02);
+ }
+ 
+ /* Hamburger Button Color */
+ 
+ .navbar-default .navbar-toggle {
+     border-color: #29ccc4;
+     background-color: #29ccc4;
+ }
+ 
+ /* Hamburger Button Line's Color */
+ 
+ .navbar-default .navbar-toggle .icon-bar {
+     background-color: #fff;
+ }
+ 
+ /* Hamburger Button Color After Toggle */
+ 
+ .navbar-default .navbar-toggle:hover,
+ .navbar-default .navbar-toggle:focus {
+     background-color: #29ccc4;
+ }
+ 
+ /* Text and Styling for Navbar */
+ 
+ .navbar-default .nav li a {
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     letter-spacing: 1px;
+     color: #fff;
+ }
+ 
+ /* Color of Text When Hover */
+ 
+ .navbar-default .nav li a:hover,
+ .navbar-default .nav li a:focus {
+     outline: 0;
+     color: #1ee2e7;
+ }
+ 
+ /* Color for Highlight Bar When Scrolling */
+ 
+ .navbar-default .navbar-nav>.active>a {
+     border-radius: 0;
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Color for Highlight Bar when Static */
+ 
+ .navbar-default .navbar-nav>.active>a:hover,
+ .navbar-default .navbar-nav>.active>a:focus {
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Navbar Web and Tablet Styles */
+ 
+ @media only screen and (min-width:768px) {
+     .navbar-default {
+         padding: 25px 0;
+         border: 0;
+         background-color: transparent;
+         -webkit-transition: padding .3s;
+         -moz-transition: padding .3s;
+         transition: padding .3s;
+     }
+ 
+     .navbar-default .navbar-brand {
+         font-size: 2em;
+         -webkit-transition: all .3s;
+         -moz-transition: all .3s;
+         transition: all .3s;
+     }
+ 
+     .navbar-default .navbar-nav>.active>a {
+         border-radius: 3px;
+     }
+ 
+     .navbar-default.navbar-shrink {
+         padding: 10px 0;
+         background-color: black;
+     }
+ 
+     .navbar-default.navbar-shrink .navbar-brand {
+         font-size: 1.5em;
+     }
+ }
+ 
+
+ /* ------------- */
+ /* Header Styles */
+ /* ------------- */
+ 
+ header {
+     text-align: center;
+     color: #fff;
+     background-attachment: scroll; 
+     background-image: url(images/temp.png);
+     background-position: center center;   
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     background-size: cover;
+     -o-background-size: cover;
+ }
+ 
+ header .intro-text {
+     padding-top: 100px;
+     padding-bottom: 50px;
+ }
+ 
+ header .intro-text .intro-lead-in {
+     margin-bottom: 25px;
+     font-family: "Exo", sans-serif;
+     font-size: 22px;
+     color: white;
+     font-style: italic;
+     line-height: 22px;
+ }
+ 
+ header .intro-text .intro-heading {
+     margin-bottom: 25px;
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 50px;
+     color: white;
+     font-weight: 700;
+     line-height: 50px;
+ }
+ 
+/* Header Web Styles */
+
+ @media only screen and (min-width:768px) {
+     header .intro-text {
+         padding-top: 300px;
+         padding-bottom: 200px;
+     }
+ 
+     header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Exo", sans-serif;
+        font-size: 22px;
+        color: white;
+        font-style: italic;
+        line-height: 22px;
+     }
+ 
+     header .intro-text .intro-heading {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: "Exo", sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        line-height: 50px;
+     }
+ }
+
+/* Header Tablet Styles */
+
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    header .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    
+    header .intro-text .intro-lead-in {
+        margin-bottom: 25px;
+        font-family: "Exo", sans-serif;
+        font-size: 22px;
+        color: white;
+        font-style: italic;
+        line-height: 22px;
+    }
+    
+    header .intro-text .intro-heading {
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        font-family: "Exo", sans-serif;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+        line-height: 50px;
+    }
+}
+ 
+ /* --------------- */
+ /* Overview Styles */
+ /* --------------- */
+ 
+ 
+ .overview-image{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;    
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+ }
+ 
+ .bg-overview{
+     width: auto;
+     padding:5rem;
+     background-color: white;
+     color: black;
+ }
+  
+/* Overview Web Styles */
+
+ @media only screen and (min-width:768px) {
+     section {
+         padding: 150px 0;
+     }
+
+     .overview-image{
+        width: 420px;
+        height: 420px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+        margin-left: 100px;
+        display: block;
+    }
+ }
+
+/* Overview Tablet Styles */
+
+ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .overview-image{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;    
+        display: block;
+     }
+     
+     .bg-overview{
+         width: auto;
+         padding:5rem;
+         background-color: white;
+         color: black;
+     }
+}
+ 
+ /* ------------ */
+ /* About Sytles */
+ /* ------------ */
+ 
+ .about-image{
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;    
+    display: block;
+ }
+
+/* Rectify the Margin on Mobile */
+
+ .rect-margin{
+     margin-top: 100px;
+ }
+
+.web{
+    display: none;
 }
 
-/* 
-@media only screen and (min-width: 768px) {
+.mov{
+    display: block;
+}
+
+ .bg-about{
+     width: auto;
+     padding:2rem;
+     background-color: black;
+     color: white;
+ }
+ 
+/* About Web Styles */
+
+@media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .web{
+        display: block;
+    }
+
+    .mov{
+        display: none;
+    }
+
+    .about-image{
+     width: 420px;
+     height: 420px;
+     margin-top: 80px;
+     margin-bottom: 80px;
+     display: block;
+    }
+}
+ 
+/* About Tablet Styles */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .about-image{
+        max-height: 100%;
+        max-width: 100%;
+        /* margin: auto;     */
+        display: block;
+     }
+    
+    .web{
+        display: none;
+    }
+    
+    .rect-margin{
+        margin-top: 100px;
+    }
+
+    .mov{
+        display: block;
+    }
+    
+     .bg-about{
+         width: auto;
+         padding:2rem;
+         background-color: black;
+         color: white;
+     }
+}
+
+ /* ---------------------- */
+ /* Prodcut Styles */
+ /* ---------------------- */
+ 
+ .product-image{
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;    
+    display: block;
+ }
+ 
+ .bg-product{
+     width: auto;
+     padding:5rem;
+     background-color: white;
+     color: black;
+ }
+
+ /* Product Web Styles */
+
+ @media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .product-image{
+        width: 618px;
+        height: 520px;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        margin-left: 80px;
+        display: block;
+    }
+}
+
+/* Product Tablet Styles */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .product-image{
+        max-height: 100%;
+        max-width: 100%;
+        margin: auto;    
+        display: block;
+     }
+     
+     .bg-product{
+         width: auto;
+         padding:5rem;
+         background-color: white;
+         color: black;
+     }
+}
+
+ /* -------------- */
+ /* Contact Styles */
+ /* -------------- */
+ 
+ .form-group{
+     font-family: "Exo", sans-serif;
+ }
+
+ /* Removes the image on mobile view */
+
+ .contact-image{
+    display: none;
+ }
+ 
+ .bg-contact{
+     width: auto;
+     padding:3rem;
+     background-color: black;
+     color: white;
+ }
+ 
+/* Fitting the form in the section */
+
+ .form-space{
+     margin-top: 20px;
+ }
+ 
+/* Message Box Styling */
+
+ textarea{
+     resize: vertical;
+     min-height: 300px;
+ }
+ 
+ /* Form Button */
+ 
+ .btn-xl {
+     padding: 20px 40px;
+     border-color: #29ccc4;
+     border-radius: 3px;
+     text-transform: uppercase;
+     font-family: "Exo", sans-serif;
+     font-size: 16px;
+     font-weight: 700;
+     color: #fff;
+     background-color: #29ccc4;
+ }
+ 
+ /* Form Button on Hover */
+ 
+ .btn-xl:hover,
+ .btn-xl:focus,
+ .btn-xl:active,
+ .btn-xl.active,
+ .open .dropdown-toggle.btn-xl {
+     border-color: #17d0d5;
+     color: #fff;
+     background-color: #17d0d5;
+ }
+
+/* Contact Web Styles */
+
+@media only screen and (min-width:768px) {
+    section {
+        padding: 150px 0;
+    }
+
+    .bg-contact{
+        width: auto;
+        padding:2rem;
+        background-color: black;
+        color: white;
+    }
+
+    .contact-image{
+        width: 420px;
+        height: 594px;
+        margin-top: -80px;
+        margin-left: 40px;
+        display: block;
+    }
+
+    .form-space{
+        margin-top: 100px;
+    }
+}
+
+/* Contact Tablet Styles */
+ 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+    .contact-image{
+       display: none;
+    }
+    
+    .bg-contact{
+        width: auto;
+        padding:3rem;
+        background-color: black;
+        color: white;
+    }
+    
+    .form-space{
+        margin-top: 20px;
+    }
     
 }
 
-@media only screen and (min-width: 1000px) {
+ /* ------------- */
+ /* Footer Styles */
+ /* ------------- */
+ 
+ footer {
+     padding: 25px 0;
+     text-align: center;
+ }
+ 
+ /* Copyright Declaration Style */
+ 
+ footer span.copyright {
+     text-transform: uppercase;
+     text-transform: none;
+     font-family: "Exo", sans-serif;
+     line-height: 40px;
+ }
+ 
+ /* Privacy and Terms links */
+ 
+ footer ul.quicklinks {
+     margin-bottom: 0;
+     text-transform: uppercase;
+     text-transform: none;
+     font-family: "Exo", sans-serif;
+     line-height: 40px;
+ }
+ 
+ ul.social-buttons {
+     margin-bottom: 0;
+ }
 
-} */
+ .img-social{
+    max-height: 75%;
+    max-width: 75%;
+    margin: auto;    
+    /* display: block; */
+ }
+ 
+ ul.social-buttons li a {
+     display: flex;
+     width: 40px;
+     height: 40px;
+     border-radius: 100%;
+     color: #fff;
+     background-color: #29ccc4;
+     -webkit-transition: all .3s;
+     -moz-transition: all .3s;
+     transition: all .3s;
+ }
+ 
+ 
