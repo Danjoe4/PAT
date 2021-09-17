@@ -543,6 +543,10 @@ section h3.section-subheading {
      font-family: "Exo", sans-serif;
  }
 
+ section h3.section-subheading.p-br {
+    margin-bottom: 4em;
+ }
+
  /* Removes the image on mobile view */
 
  .contact-image{
@@ -556,44 +560,7 @@ section h3.section-subheading {
      color: white;
  }
  
-/* Fitting the form in the section */
 
- .form-space{
-     margin-top: 20px;
- }
- 
-/* Message Box Styling */
-
- textarea{
-     resize: vertical;
-     min-height: 300px;
- }
- 
- /* Form Button */
- 
- .btn-xl {
-     padding: 20px 40px;
-     border-color: #29ccc4;
-     border-radius: 3px;
-     text-transform: uppercase;
-     font-family: "Exo", sans-serif;
-     font-size: 16px;
-     font-weight: 700;
-     color: #fff;
-     background-color: #29ccc4;
- }
- 
- /* Form Button on Hover */
- 
- .btn-xl:hover,
- .btn-xl:focus,
- .btn-xl:active,
- .btn-xl.active,
- .open .dropdown-toggle.btn-xl {
-     border-color: #17d0d5;
-     color: #fff;
-     background-color: #17d0d5;
- }
 
 /* Contact Web Styles */
 
