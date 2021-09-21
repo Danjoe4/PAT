@@ -205,6 +205,19 @@ def unobscure(obscured: bytes) -> list:
     return out
 
 
+
+def decrypt(aes_string) -> list:
+    """ For testing, decodes from base64, decompresses, then decodes back 
+    to a regular string and splits into a list
+    """
+    # we need to chop off b'..' because .get() returns a string
+
+    out = zlib.decompress(urlsafe_b64decode(obscured))
+    out = out.decode('utf-8').split(',')
+    print(out)
+    return out
+
+
 def check_for_dup(encoded_value):
     """ Returns [product_page, viewblock_page] if the database contains the same encoded string
     """

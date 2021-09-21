@@ -6,14 +6,8 @@ Manual queries no longer work, you need to use the QR gen to get the encoded que
 Although you can use https://zxing.org/w/decode.jspx to get the raw QR text
 
 ######################## DEVELOPMENT TIMELINE #################################
-V0_4_9_5 (current) : Adding loading screen for the duplicates, refactored some code, added 
-error handling if the URL is modified
-
-V0_5 Play with the gas price one last time to see if we can achieve faster contract generation. 
-
-V0_5_5... final testing and bug fixes
-
-V0_6 The version that will be used at the demo. 
+Demo Part 2:
+V0_5+ will be managed on clickup
 
 
 Post demo?
