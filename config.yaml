@@ -1,3 +1,6 @@
 private_key : "ee3c7649edbf89807b2ca1b682fe43f9b917cd673d82ba6668468a6a9bec81fe"
 account_address : "0x64E97Af0a1702C40a2e610A8d66d9BeDd7C08fDA"
 flask_session_key: "\x91x\xad{\xfbh[A<\x86\xc4\xc6\x8a\x89\x1e\x8a#\xef\xa8f\x06\xb5\xa5\x0b\xc7\x83t\x88\xdf@\xedh"
+
+encryption_password_1: 'password'
+encryption_salt_1: '\xb7\x01\x0b\x03Y\xc4\xe7\xa6\r\xbd\x1d\xb4;iD\xfd'

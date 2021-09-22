@@ -15,6 +15,12 @@ import zlib
 from base64 import urlsafe_b64decode
 import binascii
 
+# encryption
+from cryptography.fernet import Fernet
+from cryptography.hazmat.primitives import hashes
+from cryptography.hazmat.primitives.kdf.pbkdf2 import PBKDF2HMAC
+import base64 
+
 ############ useful globals; same for all users ###########################
 # load our yaml file with all our secrets
 with open("config.yaml") as f_stream:
@@ -141,14 +147,14 @@ def serve_about_page():
 
 def save_product_parameters_to_session(encoded_value):
     session['encoded_value'] = encoded_value
-    params_list = unobscure(encoded_value)
+    params_list = decrypt(encoded_value)
     print(params_list)
 
     # save these params to the session
-    session['brand'] = str(params_list[0])
-    session['product'] = str(params_list[1])
-    session['model'] = str(params_list[2])
-    session['serial'] = str(params_list[3])
+    session['brand'] = params_list[0]
+    session['product'] = params_list[1]
+    session['model'] = params_list[2]
+    session['serial'] = params_list[3]
     #print(session)
 
 
@@ -193,29 +199,38 @@ def set_init():
     ]
 
 
-def unobscure(obscured: bytes) -> list:
-    """ For testing, decodes from base64, decompresses, then decodes back 
-    to a regular string and splits into a list
+
+def decrypt(encrypted_str: str) -> list:
+    """ Basically 
     """
-    # we need to chop off b'..' because .get() returns a string
+    ENCRYPTION_KEY_1 = derive_encryption_key()
+    f = Fernet(ENCRYPTION_KEY_1)
+    string_params = f.decrypt(encrypted_str.encode("utf-8"))
+    print("decrypted bytes: ")
+    print(string_params)
+    list_params = list(string_params.decode("utf-8").split(','))
+    print(list_params)
+    return list_params
 
-    out = zlib.decompress(urlsafe_b64decode(obscured))
-    out = out.decode('utf-8').split(',')
-    print(out)
-    return out
 
-
-
-def decrypt(aes_string) -> list:
-    """ For testing, decodes from base64, decompresses, then decodes back 
-    to a regular string and splits into a list
+def derive_encryption_key():
+    """ Uses our salt and password to derive the key
     """
-    # we need to chop off b'..' because .get() returns a string
+    with open("config.yaml") as f_stream:
+        config_file = yaml.load(f_stream, yaml.FullLoader)
 
-    out = zlib.decompress(urlsafe_b64decode(obscured))
-    out = out.decode('utf-8').split(',')
-    print(out)
-    return out
+    salt = bytes(config_file["encryption_salt_1"], encoding='utf8')
+    password = bytes(config_file["encryption_password_1"], encoding='utf8')
+
+    kdf = PBKDF2HMAC(
+        algorithm=hashes.SHA256(),
+        length=32,
+        salt=salt,
+        iterations=10000)
+    key = base64.urlsafe_b64encode(kdf.derive(password))
+    return key
+
+
 
 
 def check_for_dup(encoded_value):
