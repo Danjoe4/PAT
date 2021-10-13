@@ -1,6 +1,5 @@
-from base64 import urlsafe_b64decode
-import binascii
-import yaml
+import binascii # error handling for rogue character
+import yaml #config file
 
 # encryption
 from cryptography.fernet import Fernet

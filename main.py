@@ -135,14 +135,12 @@ def serve_results_page():
 
 @app.route("/deploying")
 def return_cookie():
-    """ This is only to return a cookie to the fetch in duplicate_loading.js
+    """ This is only to return a cookie to the fetch in duplicate_loading.js because HTTP is stateless
     """
     return {}
 
 
-@app.route("/about")
-def serve_about_page():
-    return render_template("about.html")
+
 
 
 
@@ -215,7 +213,13 @@ def add_entry(enc_val, product_url, viewblock_url):
         csv_writer.writerow([enc_val, product_url, viewblock_url])
 ############################################################################################
 
+#delete after refactor ###############################
+@app.route("/about")
+def serve_about_page():
+    return render_template("about.html")
 
+
+###################################################
 if __name__ == "__main__":
     #unobscure(b'eNpL0UlJASIwTgEAHekEbQ==')
     #app.run(debug=True)
