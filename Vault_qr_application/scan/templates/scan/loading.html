@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
   <head>
-    <link rel="stylesheet" media="all" href="{{ url_for('static', filename='/loading.css')}}">
+    <link rel="stylesheet" media="all" href="{{ url_for('.static', filename='/loading.css')}}">
     
   </head>
 
@@ -20,5 +20,5 @@
     </div>
   </div>
   
-  <script src="{{url_for('static', filename='/loading.js')}}"></script>
+  <script src="{{url_for('.static', filename='/loading.js')}}"></script>
 </html>

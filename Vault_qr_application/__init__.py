@@ -12,12 +12,15 @@ def init_app():
     with app.app_context():
         # Import parts of our application
         from .home.views import home_bp
-        #from .scan.views import scan_bp
+        from .scan.views import scan_bp
 
         # Register Blueprints
         app.register_blueprint(home_bp, url_prefix='/home')
-        #app.register_blueprint(scan_bp, url_prefix='/scan')
+        app.register_blueprint(scan_bp, url_prefix='/scan')
 
+        # Import and register APPLICATION error handlers
+        from .error import handle_error_404
+        app.register_error_handler(404, handle_error_404)
 
         print(app.url_map)
 
