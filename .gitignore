@@ -3,3 +3,4 @@
 /flask_session
 /.vscode
 /local_info
+**/__pycache__
