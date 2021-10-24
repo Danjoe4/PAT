@@ -10,6 +10,8 @@ def init_app():
     app.config.from_object("config.DevConfig")
 
     with app.app_context():
+        # logging, add
+
         # Import parts of our application
         from .home.views import home_bp
         from .scan.views import scan_bp

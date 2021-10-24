@@ -9,7 +9,7 @@ import zlib
 import csv
 
 from .query import Query
-from .mint import mint_nft
+from .mint import mint_nft, get_current_chain
 
 # Blueprint Configuration
 scan_bp = Blueprint(
@@ -25,8 +25,7 @@ def main():
     and decides what to do with them
     """
     user_query = Query(request.args.get('v'))
-    print("initial encrypted url parameter:")
-    print(user_query.encrypted_string)
+    print(user_query)
 
     ##### change once db is added ############################################
     existing_urls = check_for_dup(user_query.encrypted_str)
@@ -41,14 +40,14 @@ def main():
 
     # otherwise proceed to generate the NFT as normal
     try: # catches error caused by the user modifying the url string
-        session["user_query"] = user_query
+        session["user_query"] = user_query.__dict__ # custom types must be stored as a dict
     except (binascii.Error, zlib.error) as err: 
         return render_template("scan/error.html") ##add bp error handler
 
     return serve_loading_page()
 
 
-@app.route('/duplicate')
+@scan_bp.route('/duplicate')
 def serve_duplicate_page():
     data={"product_page":  session["product_page"],
         "viewblock_page": session["viewblock_page"]
@@ -56,7 +55,7 @@ def serve_duplicate_page():
     return render_template("scan/already_scanned.html", data=data)
 
 
-@app.route("/deploy")
+@scan_bp.route("/deploy")
 def deploy_contract():
     """ Uses pyzil to deploy the contract
     """
@@ -67,16 +66,17 @@ def deploy_contract():
     return {} # we're using a server side session instead
 
 
-@app.route("/results")
+@scan_bp.route("/results")
 def serve_results_page():
     # pull saved values from the session
     print("/results session values: ")
-    print(session)
-    product_page = get_product_page(session['model'])
+    
+    
+    product_page = get_product_page(session['user_query']['model'])
     viewblock_page = get_viewblock_page(session['contract_address'])
 
     #temp duplication solution
-    add_entry(session['encoded_value'], product_page, viewblock_page)
+    add_entry(session['user_query']['encrypted_str'], product_page, viewblock_page)
 
     return render_template('scan/results.html', data={
         'product_page' : product_page,
@@ -84,7 +84,7 @@ def serve_results_page():
     })
 
 
-@app.route("/deploying")
+@scan_bp.route("/deploying")
 def return_cookie():
     """ This is only to return a cookie to the fetch in duplicate_loading.js because HTTP is stateless
     """
@@ -103,7 +103,7 @@ def serve_loading_page():
 
 def get_product_page(model):
     # open our database
-    csv_file = csv.reader(open('database.csv', "r"), delimiter=",")
+    csv_file = csv.reader(open('Vault_qr_application/scan/database.csv', "r"), delimiter=",")
     url = None
     for row in csv_file: #look for the model number
         if model == row[1]:
@@ -117,7 +117,7 @@ def get_product_page(model):
 
 def get_viewblock_page(addr):
     # string format should be the same every time
-    return f"https://viewblock.io/zilliqa/address/{addr}?network={CURRENT_CHAIN}&tab=state"
+    return f"https://viewblock.io/zilliqa/address/{addr}?network={get_current_chain()}&tab=state"
 
 
 
@@ -128,10 +128,9 @@ def check_for_dup(encoded_value):
     """ Returns [product_page, viewblock_page] if the database contains the same encoded string,
     """
     # open our database
-    with open('dup_checker.csv') as csv_file:
+    with open('Vault_qr_application/scan/dup_checker.csv') as csv_file:
         csv_reader = csv.reader(csv_file, delimiter=',')
         for row in csv_reader: #look for the value
-            print(row)
             if encoded_value == row[0]:
                 return [row[1], row[2]]
     

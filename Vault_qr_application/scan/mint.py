@@ -20,10 +20,10 @@ chain.set_active_chain(chain.TestNet)
 account = Account(address = account_address, private_key = private_key)
 ###########################
 
-def mint_nft(user_query) -> zilkey:
+def mint_nft(user_query: dict) -> zilkey:
     """ Mint the contract and return the contract address
     """
-    code = open("contract.scilla").read()
+    code = open("Vault_qr_application/scan/contract.scilla").read()
     contract = Contract.new_from_code(code)
     contract.account = account 
     # set custom initialization variables and deploy
@@ -34,12 +34,12 @@ def mint_nft(user_query) -> zilkey:
     return contract_address
 
 
-def init_nft_params(user_query):
+def init_nft_params(user_query: dict):
     return [
-    Contract.value_dict("brand", "String", user_query.brand),
-    Contract.value_dict("product", "String", user_query.product),
-    Contract.value_dict("model", "String", user_query.model),
-    Contract.value_dict("serial", "String", user_query.serial),
+    Contract.value_dict("brand", "String", user_query['brand']),
+    Contract.value_dict("product", "String", user_query['product']),
+    Contract.value_dict("model", "String", user_query['model']),
+    Contract.value_dict("serial", "String", user_query['serial']),
     Contract.value_dict("print_date", "String", init_date_str()),
     Contract.value_dict("owner", "ByStr20", account.address0x),
     Contract.value_dict("_scilla_version", "Uint32", "0")
@@ -50,3 +50,6 @@ def init_date_str():
     today = datetime.datetime.utcnow()
     d1 = today.strftime("%b %d %Y %H:%M:%S")
     return d1
+
+def get_current_chain():
+    return CURRENT_CHAIN

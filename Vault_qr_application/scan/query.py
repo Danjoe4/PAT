@@ -13,8 +13,16 @@ class Query:
         self.set_default_salt_and_password()
         self.brand, self.product, self.model, self.serial = self.decrypt(encrypted_str)
 
+    def __str__(self):
+        return f"""The values in this query are as follows: \n
+        Encrypted string: {self.encrypted_str} \n
+        brand: {self.brand} \n
+        product: {self.product} \n 
+        model: {self.model} \n
+        serial: {self.serial} """
+
     def set_default_salt_and_password(self) -> None:
-        with open("../../config.yaml") as f_stream:
+        with open("config.yaml") as f_stream:
             config_file = yaml.load(f_stream, yaml.FullLoader)
 
         self.salt = bytes(config_file["encryption_salt_1"], encoding='utf8')
@@ -27,10 +35,7 @@ class Query:
         ENCRYPTION_KEY_1 = self._derive_encryption_key()
         f = Fernet(ENCRYPTION_KEY_1)
         string_params = f.decrypt(encrypted_str.encode("utf-8"))
-        print("decrypted bytes: ")
-        print(string_params)
         list_params = list(string_params.decode("utf-8").split(','))
-        print(list_params)
         return list_params
 
     def _derive_encryption_key(self):
@@ -43,11 +48,3 @@ class Query:
             iterations=10000)
         key = base64.urlsafe_b64encode(kdf.derive(self.password))
         return key
-
-    def print_query(self):
-        print("The values in this query are as follows:")
-        print("brand: " + self.brand)
-        print("product: " + self.product)
-        print("model: " + self.model)
-        print("serial: " + self.serial)
-        print("duplicate (T or F): " + self.is_duplicate)
