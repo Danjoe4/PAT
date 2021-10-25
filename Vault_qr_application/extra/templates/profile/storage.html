@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Storage Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!-- CSS Import -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('static', filename='storage.css')}}">
+
+</head>
+
+<body>
+  <div class="sidebar">
+
+    <div class="logo-details btm-border-side">
+        <div class="logo_name">Vault</div>
+        <i class='bx bx-menu bx-lg' id="btn" ></i>
+    </div>
+
+    <ul class="nav-list">
+    
+      <li>
+        <a href="#">
+          <span class="links_name">Option1</span>
+        </a>
+      </li>
+
+      <li>
+       <a href="#">
+         <span class="links_name">Option2</span>
+       </a>
+     </li>
+
+     <li>
+       <a href="#">
+         <span class="links_name">Option3</span>
+       </a>
+     </li>
+
+     <li>
+       <a href="#">
+         <span class="links_name">About</span>
+       </a>
+     </li>
+
+    </ul>
+  </div>
+
+  <!-- Logo Section -->
+
+  <section id="home" class="home-section btm-border">
+      
+    <div class="text-center parse-center">
+      <a href="#"><img class="img-icon-logo" src="{{url_for('static', filename='images/logo_and_name.jpeg')}}" alt="logo"></a>
+    </div>
+
+  </section>
+
+  <!-- Product Cathegories -->
+
+  <section id="cathegories" class="home-section">
+    <div class="container-fluid">
+
+        <div class="row padding">
+
+            <div class="text-center parse-center">
+                <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Automotive Icon.png')}}" alt="All Items Icon"></a>
+                    <h2>All Items</h2>
+              </div>
+    
+        </div>
+
+        <!--  -->
+
+        <div class="row padding">
+
+            <ul class="list-inline ">
+
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Automotive Icon.png')}}" alt="Automotive Icon"></a>
+                    <h2>Automotive</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Beauty and Personal Care Icon.png')}}" alt="Beauty and Personal Care Icon"></a>
+                    <h2>Beauty and Personal Care</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Clothing Shoes and Jewelry.png')}}" alt="Clothing Shoes and Jewelry Icon"></a>
+                    <h2>Clothing Shoes and Jewelry</h2>
+                </li>
+                
+            </ul>
+
+        </div>
+        
+        <!--  -->
+
+        <div class="row padding">
+
+            <ul class="list-inline">
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Computers.png')}}" alt="Computers Icon"></a>
+                    <h2>Computers</h2>
+                </li>
+
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Electronics Icon.png')}}" alt="Electronics Icon"></a>
+                    <h2>Electronics</h2>
+                </li>
+
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Fine Art and Collectables.png')}}" alt="Fine Art and Collectables Icon"></a>
+                    <h2>Fine Art and Collectables</h2>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <!--  -->
+
+        <div class="row padding">
+
+            <ul class="list-inline">
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Health Icon.png')}}" alt="Health Icon"></a>
+                    <h2>Health</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Industrial and Scientific Icon.png')}}" alt="Industrial and Scientific Icon"></a>
+                    <h2>Industrial and Scientific</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Luxury Brands Icon.png')}}" alt="Luxury Brands Icon"></a>
+                    <h2>Luxury Brands</h2>
+                </li>
+               
+            </ul>
+
+        </div>
+
+        <!--  -->
+
+        <div class="row padding">
+
+            <ul class="list-inline">
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Musical Instruments Icon.png')}}" alt="Musical Instruments Icon"></a>
+                    <h2>Musical Instruments</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Pet Supplies Icon.png')}}" alt="Pet Supplies Icon"></a>
+                    <h2>Pet Supplies</h2>
+                </li>
+                
+                <li>    
+                    <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Phones and Accesories Icon.png')}}" alt="Phones and Accesories Icon"></a>
+                    <h2>Phones and Accesories</h2>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <!--  -->
+
+        <div class="row padding">
+
+            <div class="text-center parse-center">
+                <a href="{{ url_for('serve_cathegory_page') }}"><img class="img-icon" src="{{url_for('static', filename='images/Sports and Outdoors Icon.png')}}" alt="Sports and Outdoors Icon"></a>
+                    <h2>Sports and Outdoors</h2>
+              </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- JavaScript Imports -->
+<script  src="{{url_for('static', filename='storage.js')}}"></script>
+
+</body>
+</html>
