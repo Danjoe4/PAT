@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Storage Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!-- CSS Import -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('static', filename='cathegory.css')}}">
+
+</head>
+
+<body>
+  <div class="sidebar">
+
+    <div class="logo-details btm-border-side">
+        <div class="logo_name">Vault</div>
+        <i class='bx bx-menu bx-lg' id="btn" ></i>
+    </div>
+
+    <ul class="nav-list">
+    
+      <li>
+        <a href="#">
+          <span class="links_name">Option1</span>
+        </a>
+      </li>
+
+      <li>
+       <a href="#">
+         <span class="links_name">Option2</span>
+       </a>
+     </li>
+
+     <li>
+       <a href="#">
+         <span class="links_name">Option3</span>
+       </a>
+     </li>
+
+     <li>
+       <a href="#">
+         <span class="links_name">About</span>
+       </a>
+     </li>
+
+    </ul>
+  </div>
+
+  <section id="home" class="home-section">
+      
+    <div class="pull-right">
+        <li>
+            <a href="{{ url_for('serve_storage_page') }}" class="rt-border">
+                <i class='bx bxs-left-arrow return-arrow'></i>
+                <i><span class="return">Return</span></i>
+            </a>
+        </li>
+          
+    </div>
+
+    <div class="text-center parse-center">
+      <img class="img-icon" src="{{url_for('static', filename='images/Automotive Icon.png')}}" alt="logo">
+    </div>
+
+    <div class="separator">
+        <div class="line"></div>
+        <h2>Cathegory</h2>
+        <div class="line"></div>
+    </div>
+
+
+
+    <div class="text-center no-items">
+        <h2>NO ITEMS FOR THIS CATHEGORY</h2>
+    </div>
+
+  </section>
+
+
+<!-- JavaScript Imports -->
+<script  src="{{url_for('static', filename='storage.js')}}"></script>
+
+</body>
+</html>

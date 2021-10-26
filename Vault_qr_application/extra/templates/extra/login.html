@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+<!-- Import Bootstrap -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+
+</head>
+
+<body>
+
+    <!-- Login Main -->
+
+    <section id="Login" class="section">
+        <div class="container bg-contact">
+            <div class="row center-block">
+                <div class="col-md-auto text-center">
+                    <img class="contact-image" src="{{url_for('static', filename='images/logo_and_name.jpeg')}}" alt="Contact Us">
+                </div>
+            </div>
+
+            <div class="row">
+                <form name="login" id="contactForm" novalidate="">
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+
+                    <!-- Password -->
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" id="password" required="" data-validation-required-message="Please enter your Password.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                
+                </form>
+            </div>
+            <!-- Checkbox -->
+
+            <div class="row buffer">  
+                <!-- Remember email -->
+                <div class="col-md-auto text-center">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Remember">
+                        <label class="form-check-label" for="Remember">
+                            Remember email
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forgot password -->
+            <div class="row buffer">
+                 <div class="col-md-auto text-center">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="{{ url_for('serve_storage_page') }}">Forgot Pasword?</a>
+                        </li>
+                    </ul>
+                 </div>
+            </div>
+
+            <!-- Login Button -->
+            <div class="row top-buffer">
+                <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-xl">Login</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

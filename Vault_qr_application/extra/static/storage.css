@@ -1,0 +1,240 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+ *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: black; */
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: "Exo", sans-serif;
+    font-size: 2vw;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    text-align: center;
+}
+
+/* ------------- */
+/* Navbar Styles */
+/* ------------- */
+ 
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 78px;
+  background-color: transparent;
+  padding: 6px 14px;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+
+
+
+body{
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  background-color: black;
+}
+
+.bx-menu{
+  color: #29ccc4;
+}
+
+.bx-menu-alt-right{
+  color: #29ccc4;
+}
+
+
+.sidebar.open{
+  width: 250px;
+  background-color: black;
+}
+
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+
+
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+
+.sidebar .nav-list{
+  margin-top: 20px;
+  height: 100%;
+}
+
+.sidebar li{
+  position: relative;
+  margin: 8px 0;
+  list-style: none;
+}
+
+
+.sidebar li a{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+.sidebar.active li a{
+  background: black;
+}
+
+
+.sidebar li a .links_name{
+  text-transform: uppercase;
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  color: #fff;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+.sidebar li a:hover .links_name,
+.sidebar li a:hover i{
+  transition: all 0.5s ease;
+  color: #29ccc4;
+}
+
+
+.sidebar li img{
+  height: 45px;
+  width: 45px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.home-section{
+  background-color: black;
+}
+
+/* .sidebar.open ~ .sidebar{
+  background-color: black;
+} */
+
+.sidebar.open ~ .home-section{
+  left: 250px;
+  /* width: calc(100% - 250px); */
+}
+
+.home-section .text{
+  display: inline-block;
+  color: #190f85;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 18px
+}
+
+ 
+/* ----------- */
+/* Icon Styles */
+/* ----------- */
+
+.row li {
+    width: 33.3%;
+    float: left;
+  }
+
+.parse-center{
+    width: 33.3%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-icon{
+    max-height: 80%;
+    max-width: 80%;
+    margin: auto;  
+    display: block;
+}
+
+.img-icon-logo{
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;  
+  display: block;
+}
+
+.padding{
+    margin: 3rem 2rem;
+}
+
+.btm-border{
+  border-bottom:3px double rgb(184, 179, 179);
+}
+
+
+.sidebar .btm-border-side{
+  border-bottom:4px transparent;
+}
+
+.sidebar.open .btm-border-side{
+  border-bottom:3px solid white;
+}

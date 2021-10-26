@@ -1,0 +1,114 @@
+/*!
+ * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+ @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* --------------- */
+/* General Styling */
+/* --------------- */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.section{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+body {
+   overflow-x: hidden;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: #29ccc4;
+}
+ 
+.form-group{
+    font-family: "Exo", sans-serif;
+    padding-left:35rem;
+    padding-right:35rem;
+}
+
+/* Removes the image on mobile view */
+
+.contact-image{
+    max-height: 20%;
+    max-width: 20%;
+    margin: auto;    
+    display: block;
+}
+
+.bg-contact{
+    width: auto;
+    padding:3rem;
+    /* background-color: black; */
+    color: white;
+}
+
+/* Fitting the form in the section */
+
+.form-space{
+    margin-top: 20px;
+}
+
+/* Message Box Styling */
+
+textarea{
+    resize: vertical;
+    min-height: 300px;
+}
+
+/* Form Button */
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #29ccc4;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: "Exo", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #29ccc4;
+}
+
+/* Form Button on Hover */
+
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active,
+.btn-xl.active,
+.open .dropdown-toggle.btn-xl {
+    border-color: #17d0d5;
+    color: #fff;
+    background-color: #17d0d5;
+}
+
+/* Check box */
+
+.form-check-label{
+    font-family: "Exo", sans-serif;
+}
+
+li{
+    font-family: "Exo", sans-serif;  
+    color: #1ee2e7
+}
+
+/* Increase Space Between Elements */
+
+.top-buffer { margin-top:20px; }
+.buffer { 
+    margin-top:10px;
+    margin-bottom: 10px;
+}

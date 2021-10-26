@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 <!-- Import Bootstrap -->
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('static', filename='about.css')}}">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('.static', filename='about.css')}}">
 
 </head>
 <body>
@@ -79,7 +79,7 @@
                         products using sophisticated blockchain technology.</h3>
                 </div>
                 <div class="col-lg-6">
-                    <img class="overview-image" src="{{url_for('static', filename='images/ProductVerificationicon.png')}}" alt="Product Verification">
+                    <img class="overview-image" src="{{url_for('.static', filename='images/ProductVerificationicon.png')}}" alt="Product Verification">
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
         <div class="container bg-about">
             <div class="row">
                 <div class="col-lg-5 web">
-                    <img class="about-image" src="{{url_for('static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
+                    <img class="about-image" src="{{url_for('.static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
                 </div>
                 <div class="col-lg-6 text-center">
                     <h2 class="section-heading rect-margin">SIMPLE & SECURE E-COMMERCE VERIFICATION</h2>
@@ -102,7 +102,7 @@
                         Blockchain Authentication Codes.</h3>
                 </div>
                 <div class="col-lg-5 mov">
-                    <img class="about-image" src="{{url_for('static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
+                    <img class="about-image" src="{{url_for('.static', filename='images/EcommerceVerification.png')}}" alt="Ecommerce Verification">
                 </div>
             </div>
         </div>
@@ -123,7 +123,7 @@
                         making a purchase.</h3>
                 </div>
                 <div class="col-lg-6">
-                    <img class="product-image" src="{{url_for('static', filename='images/Retail Verification Icon.png')}}" alt="Retail Verification">
+                    <img class="product-image" src="{{url_for('.static', filename='images/Retail Verification Icon.png')}}" alt="Retail Verification">
                 </div>
             </div>
         </div>
@@ -136,7 +136,7 @@
         <div class="container bg-contact">
             <div class="row">
                 <div class="col-lg-6">
-                    <img class="contact-image" src="{{url_for('static', filename='images/Contact Us Icon.png')}}" alt="Contact Us">
+                    <img class="contact-image" src="{{url_for('.static', filename='images/Contact Us Icon.png')}}" alt="Contact Us">
                 </div>
                 <div class="col-lg-5 text-center">
                     <h2 class="section-heading">Contact Us</h2>
@@ -168,21 +168,21 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li>    
-                            <a href="https://twitter.com/VAULTBLOCKCHAIN"><img class="img-social" src="{{url_for('static', filename='images/twitter.png')}}" alt="Twitter"></a>
+                            <a href="https://twitter.com/VAULTBLOCKCHAIN"><img class="img-social" src="{{url_for('.static', filename='images/twitter.png')}}" alt="Twitter"></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/VaultQR"><img class="img-social" src="{{url_for('static', filename='images/facebook.png')}}" alt="Facebook"></a>
+                            <a href="https://www.facebook.com/VaultQR"><img class="img-social" src="{{url_for('.static', filename='images/facebook.png')}}" alt="Facebook"></a>
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/VaultVerification/"><img class="img-social" src="{{url_for('static', filename='images/instagram.png')}}" alt="Instagram"></a>
+                            <a href="https://www.instagram.com/VaultVerification/"><img class="img-social" src="{{url_for('.static', filename='images/instagram.png')}}" alt="Instagram"></a>
                         </li>
                         <!-- In case we need a youtube later
                         <li>
-                            <a href="#"><img class="img-social" src="{{url_for('static', filename='images/youtube.png')}}" alt="Youtube"></a>
+                            <a href="#"><img class="img-social" src="{{url_for('.static', filename='images/youtube.png')}}" alt="Youtube"></a>
                         </li>
                         -->
                         <li>
-                            <a href="https://www.linkedin.com/company/vaultqr/?viewAsMember=true"><img class="img-social" src="{{url_for('static', filename='images/linkedin.png')}}" alt="LinkdIn"></a>
+                            <a href="https://www.linkedin.com/company/vaultqr/?viewAsMember=true"><img class="img-social" src="{{url_for('.static', filename='images/linkedin.png')}}" alt="LinkdIn"></a>
                         </li>
                     </ul>
                 </div>
@@ -204,7 +204,7 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <!-- Illuminated Tiles -->
-<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script><script  src="{{url_for('static', filename='about.js')}}"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script><script  src="{{url_for('.static', filename='about.js')}}"></script>
 
 </body>
 </html>

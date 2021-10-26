@@ -1,6 +1,6 @@
 /env
-/notes.txt
 /misc.txt
 /flask_session
 /.vscode
-/CopyofBoseModelNumberMaster.xlsx
+/local_info
+**/__pycache__
