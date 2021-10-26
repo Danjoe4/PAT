@@ -1,0 +1,40 @@
+######## SEQUENCE for local work
+source env/bin/activate
+git pull
+# make all changes 
+pip3 freeze > requirements.txt (remember to save this file)
+git add .
+git commit -m "name"
+git push
+####################################
+
+# to make a new env if broken (pythonanywhere)
+mkvirtualenv --python=/usr/bin/python3.8 ENVNAME   
+
+# to make a new env if broken (local)
+virtualenv ENVNAME --python=/usr/bin/python3.8
+
+
+#### sequence to upload to pythonanywhere #########
+workon NFTenv
+pip3 install -r requirements.txt
+git pull
+pass: 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
+
+# if those are broken, delete everything and do
+git clone https://github.com/Danjoe4/PAT.git (optional)
+
+# if virtual env is broken do
+mkvirtualenv env --python='/usr/bin/python3.8'
+workon NFTenv
+pip3 install -r requirements.txt
+
+
+https://github.com/joshnh/Git-Commands
+
+https://www.netlify.com/products/deploy-previews/
+
+
+GraphQL 
+key: 1c492d53d6fd48ce5aa10abd5cd4bbeebc252df6948148ccccfdce087d2283f3
+secret: 378199c5b44beb8f100ab09f8ab2e60389f8d693c5ac6f434c1d0c2dda4645f7
