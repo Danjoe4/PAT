@@ -38,3 +38,44 @@ https://www.netlify.com/products/deploy-previews/
 GraphQL 
 key: 1c492d53d6fd48ce5aa10abd5cd4bbeebc252df6948148ccccfdce087d2283f3
 secret: 378199c5b44beb8f100ab09f8ab2e60389f8d693c5ac6f434c1d0c2dda4645f7
+
+
+#### DB connection pythonanywhere #####
+ssh -4 -L 9999:Danjoe4-2442.postgres.pythonanywhere-services.com:12442 Danjoe4@ssh.pythonanywhere.com
+
+
+#### local db testing ####
+sudo service postgresql start
+#open the prompt
+sudo -u postgres psql
+# see databases
+\l
+# connect to the testing db
+\c testing
+
+
+diagnostics ########
+pg_lsclusters 
+
+-- Initialize the database 
+CREATE DATABASE testing;
+CREATE USER danjoe4 WITH ENCRYPTED PASSWORD 'randompass';
+GRANT ALL PRIVILEGES ON DATABASE testing TO Danjoe4;
+
+-- use "\connect testing" and proceed with making the tables
+
+-- delete db
+sudo -u postgres psql
+
+DROP DATABASE testing;
+CREATE DATABASE testing;
+CREATE USER story WITH ENCRYPTED PASSWORD 'nopass'; 
+GRANT ALL PRIVILEGES ON DATABASE testing TO story;
+
+
+
+#### goals ############
+store config in the env
+
+
+

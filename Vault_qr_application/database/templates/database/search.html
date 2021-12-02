@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <title>Search Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <!-- CSS Import -->
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{url_for('.static', filename='search.css')}}">
+  
+  <!-- Boxicons for the Search Icon -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>  
+
+    <!-- Search Bar -->
+    <section id="search-bar">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col col-md-auto search-cont">
+                    <form method="post" action="{{ url_for('.search') }}">
+                        <input name="user_search" class="search-bar" type="search" id="search-bar" placeholder="Search by model or company">
+                        <!---<input type="submit" value="Search"> ---->
+        
+                        <div class="col-md-auto search-cont">
+                            <button id="search-btn" role="button" class="search-icon">
+                                <i class='bx bx-search'></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                
+
+            </div>
+
+            <div class="row justify-content-md-center">
+
+                <div class="col-md-auto">
+                    
+                    
+                </div>
+                <div class="col-md-2">
+                    
+                    
+                </div>
+            </div>
+
+
+
+            
+
+
+
+            <div id="search-result" class="row justify-content-md-center">
+                <table style="width:100%">
+                    <th>
+                        <tr style="color: white; ">
+                       <th>Company</th>
+                       <th>Model</th>
+                       <th>Serial</th>
+                       </tr>
+                   </th>
+                    
+                    
+                     {% for row in results%}
+                    <tr style="color: white;">
+                        <td>
+                            {{row.company_name}}
+                        </td>
+                    <td>
+                            {{row.model_no}}
+                        </td>
+                    <td>    
+                        {{row.serial_no}}
+                    </td>
+                    </tr>
+                    {% endfor %}
+                    </table>
+                
+                
+                <div class="result-container">
+                    
+
+                </div>
+
+            </div>
+
+
+        </div>
+        
+    </section>
+
+
+    
+
+<!-- JavaScript Imports -->
+<script  src="{{url_for('.static', filename='search.js')}}"></script>
+
+</body>
+</html>

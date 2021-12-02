@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 <!-- Import Bootstrap -->
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('static', filename='login.css')}}">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'><link rel="stylesheet" href="{{ url_for('.static', filename='login.css')}}">
 
 </head>
 
@@ -17,7 +17,7 @@
         <div class="container bg-contact">
             <div class="row center-block">
                 <div class="col-md-auto text-center">
-                    <img class="contact-image" src="{{url_for('static', filename='images/logo_and_name.jpeg')}}" alt="Contact Us">
+                    <img class="contact-image" src="{{url_for('.static', filename='images/logo_and_name.jpeg')}}" alt="Contact Us">
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
             <div class="row buffer">
                  <div class="col-md-auto text-center">
                     <ul class="list-inline quicklinks">
-                        <li><a href="{{ url_for('serve_storage_page') }}">Forgot Pasword?</a>
+                        <li><a href="{{ url_for('.serve_storage_page') }}">Forgot Pasword?</a>
                         </li>
                     </ul>
                  </div>

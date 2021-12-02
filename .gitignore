@@ -4,3 +4,6 @@
 /.vscode
 /local_info
 **/__pycache__
+/error.log
+/alembic
+/alembic.ini

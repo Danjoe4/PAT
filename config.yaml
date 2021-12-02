@@ -4,3 +4,7 @@ flask_session_key: "\x91x\xad{\xfbh[A<\x86\xc4\xc6\x8a\x89\x1e\x8a#\xef\xa8f\x06
 
 encryption_password_1: 'password'
 encryption_salt_1: '\xb7\x01\x0b\x03Y\xc4\xe7\xa6\r\xbd\x1d\xb4;iD\xfd'
+
+postgres_db_name: 'testing'
+postgres_user_name: 'story'
+postgres_user_password: 'nopass'

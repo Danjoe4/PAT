@@ -27,7 +27,8 @@ def main():
     user_query = Query(request.args.get('v'))
     print(user_query)
 
-    ##### change once db is added ############################################
+    ##### change once db is added (Sorry professor never got around to ######
+    #  checking for duplciates using the database)  
     existing_urls = check_for_dup(user_query.encrypted_str)
     #print("the existing urls:")
     #print(existing_urls)
@@ -42,7 +43,7 @@ def main():
     try: # catches error caused by the user modifying the url string
         session["user_query"] = user_query.__dict__ # custom types must be stored as a dict
     except (binascii.Error, zlib.error) as err: 
-        return render_template("scan/error.html") ##add bp error handler
+        return render_template("scan/error.html") ## add bp error handler
 
     return serve_loading_page()
 
@@ -60,6 +61,7 @@ def deploy_contract():
     """ Uses pyzil to deploy the contract
     """
     # create the contract from the user query, store its address
+    
     session["contract_address"] = mint_nft(session["user_query"])
 
     # fetch() requires that this function return a json, but 
@@ -70,7 +72,6 @@ def deploy_contract():
 def serve_results_page():
     # pull saved values from the session
     print("/results session values: ")
-    
     
     product_page = get_product_page(session['user_query']['model'])
     viewblock_page = get_viewblock_page(session['contract_address'])

@@ -27,10 +27,20 @@ def mint_nft(user_query: dict) -> zilkey:
     contract = Contract.new_from_code(code)
     contract.account = account 
     # set custom initialization variables and deploy
+
+    ############# create ############
+    from database.CRUD import add_new_nft_record
+    entry, db_sesh = add_new_nft_record(user_query['brand'], user_query['model'], user_query['serial'],
+    init_date_str(), False)
+    #####################
     contract.deploy(init_params = init_nft_params(user_query), gas_price = 6000000000) #change gas price
     assert contract.status == Contract.Status.Deployed #hmmmm this fails
-
     contract_address = zilkey.to_bech32_address(contract.address)
+    ############## update ###############
+    entry.is_active = True
+    entry.trx_hash = contract_address
+    db_sesh.commit()
+    ##################
     return contract_address
 
 

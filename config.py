@@ -40,3 +40,7 @@ class DevConfig(Config):
     SESSION_PERMANENT = False
     SESSION_TYPE = "filesystem"
     PERMANENT_SESSION_LIFETIME = 60 # the session lasts 60 seconds
+
+    # environ.set something
+
+

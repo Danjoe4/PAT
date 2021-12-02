@@ -1,2 +1,2 @@
-""" Currently non-functional. Inventory pages need the email system in place. 
+""" A place for extra templates. Inventory pages need the email system in place
 """
