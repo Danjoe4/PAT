@@ -1,6 +1,5 @@
-import time
 import datetime
-import yaml
+from os import environ
 
 from pyzil.crypto import zilkey
 from pyzil.zilliqa import chain
@@ -8,43 +7,24 @@ from pyzil.zilliqa.units import Zil, Qa
 from pyzil.account import Account, BatchTransfer
 from pyzil.contract import Contract
 
-#### Dangerous Globals! #############
-# load our yaml file with all our secrets
-with open("config.yaml") as f_stream:
-    config_file = yaml.load(f_stream, yaml.FullLoader)
-# set the private key and account address
-private_key = config_file["private_key"]
-account_address = config_file["account_address"]
-CURRENT_CHAIN = "testnet"
-chain.set_active_chain(chain.TestNet)
-account = Account(address = account_address, private_key = private_key)
-###########################
 
 def mint_nft(user_query: dict) -> zilkey:
     """ Mint the contract and return the contract address
     """
     code = open("Vault_qr_application/scan/contract.scilla").read()
     contract = Contract.new_from_code(code)
-    contract.account = account 
-    # set custom initialization variables and deploy
-
-    ############# create ############
-    from database.CRUD import add_new_nft_record
-    entry, db_sesh = add_new_nft_record(user_query['brand'], user_query['model'], user_query['serial'],
-    init_date_str(), False)
-    #####################
-    contract.deploy(init_params = init_nft_params(user_query), gas_price = 6000000000) #change gas price
+    account = Account(address = environ.get('ZIL_WALLET_ACCOUNT_ADDRESS'), 
+    private_key = environ.get('ZIL_WALLET_PRIVATE_KEY')) 
+    contract.account = account
+    # set custom initialization variables and deploy #change gas price
+    contract.deploy(init_params = init_nft_params(user_query, account), gas_price = 6000000000) 
     assert contract.status == Contract.Status.Deployed #hmmmm this fails
     contract_address = zilkey.to_bech32_address(contract.address)
-    ############## update ###############
-    entry.is_active = True
-    entry.trx_hash = contract_address
-    db_sesh.commit()
-    ##################
+    
     return contract_address
 
 
-def init_nft_params(user_query: dict):
+def init_nft_params(user_query: dict, account):
     return [
     Contract.value_dict("brand", "String", user_query['brand']),
     Contract.value_dict("product", "String", user_query['product']),
@@ -62,4 +42,6 @@ def init_date_str():
     return d1
 
 def get_current_chain():
+    CURRENT_CHAIN = environ.get('ZIL_ACTIVE_CHAIN')
+    chain.set_active_chain(chain.TestNet)
     return CURRENT_CHAIN

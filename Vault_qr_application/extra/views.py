@@ -23,3 +23,7 @@ def serve_login_page():
 @extra_bp.route('/storage', methods=['GET'])
 def serve_storage_page():
     return render_template("extra/storage.html")
+
+@extra_bp.route('/testing', methods=['GET'])
+def serve_testing_page():
+    return render_template(f"{str(app.config.get('SESSION_TYPE'))}")

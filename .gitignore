@@ -3,7 +3,9 @@
 /flask_session
 /.vscode
 /local_info
-**/__pycache__
+**/__pycache__/
 /error.log
 /alembic
 /alembic.ini
+/.env
+/debug_log.log

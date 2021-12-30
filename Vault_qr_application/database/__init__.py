@@ -1,4 +1,2 @@
-""" All the database stuff
+""" Various modules for database CRUD operations.
 """
-
-import os, sys; sys.path.append(os.path.dirname(os.path.realpath(__file__)))

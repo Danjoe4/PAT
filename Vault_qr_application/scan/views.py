@@ -1,3 +1,4 @@
+from os import environ
 
 from flask import Blueprint
 from flask import current_app as app
@@ -7,6 +8,8 @@ from flask_session import Session
 import binascii # handles an error from modifying the url, may be deprecated 
 import zlib
 import csv
+
+from pyzil.zilliqa.chain import TestNet
 
 from .query import Query
 from .mint import mint_nft, get_current_chain
@@ -117,8 +120,8 @@ def get_product_page(model):
 
 
 def get_viewblock_page(addr):
-    # string format should be the same every time
-    return f"https://viewblock.io/zilliqa/address/{addr}?network={get_current_chain()}&tab=state"
+    # string format should be the same every time, change this radically
+    return f"https://viewblock.io/zilliqa/address/{addr}?network=testnet&tab=state"
 
 
 
