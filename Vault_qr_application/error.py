@@ -9,6 +9,5 @@ def handle_error_404(e):
     """ Redirects our user to the home page if they attempt to visit any non-existent url 
     """
     # if request.path.startswith('/api/') consider adding
-    return redirect("/database/search")
-    #return redirect("/home", code=302)
+    return redirect("/home", code=302)
 

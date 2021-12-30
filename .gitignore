@@ -7,3 +7,5 @@
 /error.log
 /alembic
 /alembic.ini
+/.env
+/debug_log.log

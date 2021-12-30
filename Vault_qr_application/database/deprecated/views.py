@@ -19,8 +19,7 @@ db_bp = Blueprint(
 
 @db_bp.route('/search', methods=['GET','POST'])
 def search():
-    """ serve the about page. Consider migrating routing to /about in the future when
-    more pages are added
+    """ Can potentially make this into a search page.
     """
     get_current_results()
     if request.method == 'POST':

@@ -1,5 +1,5 @@
 """ The web host has its own (different) WSGI file which initializes the app. 
-You should run this one for local testing. This is a useful abstract because 
+You should run this one for local testing. This is a useful abstraction because 
 the only file that is different on the webhost is the wsgi. The web host file
 has several pathing variables set, plus the following two lines:
 
